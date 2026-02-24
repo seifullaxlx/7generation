@@ -1,0 +1,143 @@
+@import 'fonts.css';
+
+/* ─── Reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Base ───────────────────────────────────────────── */
+:root {
+  --font-primary: 'PP Neue Machina', system-ui, sans-serif;
+
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ─── Layout ─────────────────────────────────────────── */
+.page {
+  min-height: 100vh;
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - var(--spacing-lg) * 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .page {
+    padding: var(--spacing-lg) var(--spacing-lg);
+  }
+}
+
+/* ─── Block ──────────────────────────────────────────── */
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.block__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+}
+
+.block__heading {
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.block__body {
+  font-size: clamp(0.9rem, 2vw, 1.125rem);
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.block__list-item {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 12px 0;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.8;
+}
+
+/* ─── Section themes (shared across all pages) ────────── */
+.section--hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #0d0d1a;
+  color: #fff;
+}
+
+.section--hero .page-grid {
+  height: auto;
+}
+
+.section--light {
+  background: #FAFAFA;
+  color: #0a0a14;
+}
+
+.section--dark {
+  background: #0d0d1a;
+  color: #fff;
+}

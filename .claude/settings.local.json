@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/kapiyanov/Desktop/study/damir/7generation && npm install 2>&1)",
+      "Bash(cd /c/Users/kapiyanov/Desktop/study/damir/7generation && npx vite build 2>&1)"
+    ]
+  }
+}
