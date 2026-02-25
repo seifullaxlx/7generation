@@ -6,78 +6,119 @@ export default function Home() {
       <section className="page section--hero page--hero" data-nav-theme="dark">
         <div className="page-grid">
           <div className="block">
-            <h1 className="block__heading">ESG & Public Safety Projects</h1>
+            <h1 className="block__heading">ESG & PUBLIC <br />SAFETY PROJECTS</h1>
+            <p className="block__heading__p">An engineering approach to real social challenges 7Generation is a technology company that designs complex digital systems for business and public-sector institutions.</p>
           </div>
           <div className="block">
             <p className="block__body">
-              7Generation is a technology company that designs complex digital
-              systems for business and public-sector institutions.
+              The same engineering mindset we
+              apply beyond commercial platforms - in social,
+              educational and public infrastructure.
+              For us, ESG is not a separate initiative. It
+              is a continuation of engineering responsibility - using technology,
+              data and processes where they create real impact. <br />
+              We develop projects that:
+              <ul className="block__list">
+                <li>expand access to education and technology</li>
+                <li>reduce digital environment risks</li>
+                <li>improve public safety</li>
+                <li>use IT as a tool for systemic, measurable change</li>
+              </ul>
             </p>
           </div>
         </div>
       </section>
 
-      <section className="page section--light" data-nav-theme="light">
+      <section className="page section--light">
         <div className="page-grid">
-          <div className="block">
-            <span className="block__label">Who We Are</span>
-            <h2 className="block__heading">Technology That Serves Society</h2>
+          <div className="second-section-title">
+            <span>/ “+1” Foundation /</span>
+            <h1>”+1” Foundation</h1>
+            <p>Access to technology is access to the future</p>
           </div>
-          <div className="block">
-            <p className="block__body">
-              We combine deep domain expertise in ESG compliance, public safety
-              infrastructure, and enterprise analytics to deliver systems that
-              work at scale.
-            </p>
-            <ul className="block__list">
-              <li className="block__list-item">ESG Reporting & Compliance</li>
-              <li className="block__list-item">Public Safety Platforms</li>
-              <li className="block__list-item">Urban Analytics Systems</li>
-              <li className="block__list-item">Video Intelligence</li>
+          <div className="second-section-body">
+            <p>How the project works</p>
+            <ul>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 1.svg" alt=""/>
+                </div>
+                <p>Receiving devices from donors and partners</p>
+              </li>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 2.svg" alt=""/>
+                </div>
+                <p>Diagnostics, repair and complete data wiping</p>
+              </li>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 3.svg" alt=""/>
+                </div>
+                <p>Equipment setup (headset, backpack, learning materials)</p>
+              </li>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 7.svg" alt=""/>
+                </div>
+                <p>Coordination with schools and beneficiary lists</p>
+              </li>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 11.svg" alt=""/>
+                </div>
+                <p>Delivery of fully prepared devices</p>
+              </li>
+              <li>
+                <div className="li-icon">
+                  <img src="/public/img/home-icons/global-network 12.svg" alt=""/>
+                </div>
+                <p>Official handover to the child with documentation</p>
+              </li>
             </ul>
+          </div>
+          <div className="second-section-desc">
+            <p>The +1 Foundation is a 7Generation social initiative that provides laptops to children from rural and socially vulnerable families for education and development.
+              We approach philanthropy the same way we approach technology projects: with transparency, quality control and responsibility for results.</p>
           </div>
         </div>
       </section>
 
-      <section className="page section--dark" data-nav-theme="dark">
-        <div className="page-grid">
-          <div className="block">
-            <span className="block__label">What We Build</span>
-            <h2 className="block__heading">Systems Built for Complexity</h2>
-            <p className="block__body">
-              From real-time video intelligence to city-wide ESG dashboards,
-              our platforms handle data volumes that matter.
-            </p>
-          </div>
-          <div className="block">
-            <ul className="block__list">
-              <li className="block__list-item">DIST — Digital Infrastructure Stack</li>
-              <li className="block__list-item">Predictive Analytics Engine</li>
-              <li className="block__list-item">Multi-source Data Fusion</li>
-              <li className="block__list-item">Real-time Monitoring & Alerts</li>
-              <li className="block__list-item">Regulatory Reporting Automation</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
-      <section className="page section--light" data-nav-theme="light">
+      <section className="page third-section">
         <div className="page-grid">
-          <div className="block">
-            <span className="block__label">Impact</span>
-            <h2 className="block__heading">Scale That Speaks for Itself</h2>
-            <p className="block__body">
-              Deployed across municipalities, enterprises, and public
-              institutions in 12+ countries.
-            </p>
-          </div>
-          <div className="block">
-            <ul className="block__list">
-              <li className="block__list-item">200 + Projects Delivered</li>
-              <li className="block__list-item">12 + Countries</li>
-              <li className="block__list-item">40 M + Data Points Processed Daily</li>
-              <li className="block__list-item">98% Uptime SLA</li>
+          <div className="third-section-list">
+            <ul>
+              <li>
+                <div className="divider" />
+                <span>/ 01 /</span>
+                <h3>626</h3>
+                <p>626 laptops delivered to children</p>
+              </li>
+              <li>
+                <div className="divider" />
+                <span>/ 02 /</span>
+                <h3>₸20</h3>
+                <p>₸20 million raised for project development</p>
+              </li>
+              <li>
+                <div className="divider" />
+                <span>/ 03 /</span>
+                <h3>196,100</h3>
+                <p>196,100 rural children still need laptops</p>
+              </li>
+              <li>
+                <div className="divider" />
+                <span>/ 04 /</span>
+                <h3>700,000</h3>
+                <p>Approximately 700,000 children across Kazakhstan lack access to devices</p>
+              </li>
             </ul>
+          </div>
+          <div className="third-section-info">
+            <span>/ Philosophy /</span>
+            <h1>By giving a laptop, we provide a tool that can change a child’s educational and life trajectory.</h1>
+            <button>Support the project</button>
           </div>
         </div>
       </section>
