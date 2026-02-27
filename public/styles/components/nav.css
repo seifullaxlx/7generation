@@ -44,7 +44,7 @@
 }
 
 
-/* Mobile: full-screen overlay */
+/* Mobile: full-screen drawer */
 .nav__links {
   list-style: none;
   display: flex;
@@ -56,7 +56,8 @@
   position: fixed;
   inset: 0;
   z-index: 99;
-  -webkit-backdrop-filter: blur(16px);
+  background: #0d0d1a;
+  color: #fff;
 
   opacity: 0;
   pointer-events: none;

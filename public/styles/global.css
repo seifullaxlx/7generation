@@ -46,6 +46,10 @@ a {
   color: inherit;
 }
 
+p {
+  font-weight: 200;
+}
+
 /* ─── Layout ─────────────────────────────────────────── */
 .page {
   padding: var(--spacing-md) var(--spacing-sm);

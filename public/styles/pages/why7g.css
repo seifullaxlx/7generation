@@ -1,2 +1,163 @@
-.page--why7g-hero {
+/* Hero */
+.why-hero {
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #0d0d1a;
+  background-image: url('/img/home.jpg');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.why-hero .page-grid {
+  align-items: end;
+  gap: 32px;
+}
+
+.why-hero__eyebrow {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.why-hero__heading {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.why-hero__right p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.7;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.why-hero__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-hero__list li {
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.6;
+  padding-left: 16px;
+  position: relative;
+}
+
+.why-hero__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+}
+
+/* Shared labels */
+.why-section-label {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.why-section-label--dark {
+  color: #020206;
+}
+
+.why-section-heading {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.why-section-heading--dark {
+  color: #020206;
+}
+
+/* Core Domains */
+.why-domains__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.why-domain-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-domain-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.why-domain-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.6;
+  color: #fff;
+}
+
+/* Why This Matters */
+.why-matters__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.why-matter-card {
+  border: 1px solid rgba(2, 2, 6, 0.1);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-matter-card__num {
+  font-size: 12px;
+  opacity: 0.35;
+  font-weight: 400;
+}
+
+.why-matter-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #020206;
+}
+
+.why-matter-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.6;
+  color: #020206;
+}
+
+@media (min-width: 768px) {
+  .why-domains__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-matters__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }

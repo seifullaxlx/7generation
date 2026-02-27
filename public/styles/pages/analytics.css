@@ -1,2 +1,267 @@
-.page--analytics-hero {
+/* Hero */
+.cap-hero {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #0d0d1a;
+}
+
+.cap-hero .page-grid {
+  align-items: end;
+  gap: 32px;
+}
+
+.cap-hero__eyebrow {
+  font-size: 12px;
+  opacity: 0.4;
+  color: #fff;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cap-hero__heading {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+
+.cap-hero__num {
+  font-size: 80px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+  margin-top: -8px;
+}
+
+.cap-hero__tags span {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cap-hero__tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cap-tag {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* Labels */
+.cap-label {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 12px;
+  color: inherit;
+}
+
+.cap-label--blue {
+  color: #2786EF;
+  opacity: 1;
+}
+
+/* Sections */
+.cap-section__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.cap-section--border {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.cap-section__heading {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+  color: #020206;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.cap-section__heading--light {
+  color: #fff;
+}
+
+.cap-section__right-label {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.cap-check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cap-check-list li {
+  font-size: 14px;
+  padding-left: 24px;
+  position: relative;
+  opacity: 0.75;
+}
+
+.cap-check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2786EF;
+}
+
+.cap-check-list--light li {
+  color: #fff;
+}
+
+.cap-note {
+  font-size: 13px;
+  opacity: 0.5;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.cap-body-light {
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.65;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.cap-bullet-list {
+  list-style: disc;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.cap-bullet-list li {
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.65;
+}
+
+.cap-subsection-heading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cap-kv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cap-kv-list--col2 {
+  gap: 16px;
+}
+
+.cap-kv-item {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 14px;
+}
+
+.cap-kv-item h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.cap-kv-item p {
+  font-size: 12px;
+  opacity: 0.55;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.cap-kv-num {
+  font-size: 12px;
+  opacity: 0.35;
+  color: #fff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cap-kv-item--highlight {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 16px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.cap-kv-item--highlight p {
+  opacity: 0.7;
+}
+
+/* Restricted Streams */
+.cap-streams__heading {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: #020206;
+  margin-bottom: 32px;
+}
+
+.cap-streams__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cap-stream-card {
+  background: #fafafa;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cap-stream-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #020206;
+}
+
+.cap-stream-card p {
+  font-size: 13px;
+  opacity: 0.6;
+  line-height: 1.5;
+  color: #020206;
+}
+
+@media (min-width: 768px) {
+  .cap-section__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cap-streams__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

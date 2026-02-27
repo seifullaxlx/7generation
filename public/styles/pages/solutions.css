@@ -1,2 +1,115 @@
-.page--solutions-hero {
+/* Hero */
+.sol-hero {
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  background: #0d0d1a;
+}
+
+.sol-hero__heading {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+}
+
+/* Verticals */
+.sol-verticals {
+  background: #0d0d1a;
+}
+
+.sol-verticals__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sol-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sol-card__title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sol-card__what {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.sol-card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sol-card__list li {
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.65;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.sol-card__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+}
+
+/* Frameworks */
+.sol-frameworks {
+  background: #0d0d1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sol-frameworks__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sol-fw-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sol-fw-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sol-fw-card p {
+  font-size: 13px;
+  opacity: 0.55;
+  line-height: 1.6;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .sol-verticals__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sol-frameworks__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

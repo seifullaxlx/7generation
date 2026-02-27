@@ -6,12 +6,12 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/dist', label: 'DIST' },
   { to: '/solutions', label: 'Solutions' },
-  { to: '/why-7g', label: 'Why 7G' },
+  { to: '/careers', label: 'Why 7G' },
   { to: '/analytics', label: 'Analytics' },
   { to: '/esg', label: 'ESG' },
   { to: '/company', label: 'Company' },
   { to: '/contact', label: 'Contact' },
-  { to: '/video-intelligence', label: 'Video Intelligence' },
+  { to: '/engineering-culture', label: 'Video Intelligence' },
 ]
 
 export default function Nav() {

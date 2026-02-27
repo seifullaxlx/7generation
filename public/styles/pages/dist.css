@@ -1,2 +1,147 @@
-.page--dist-hero {
+/* Hero */
+.dist-hero {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #0d0d1a;
+}
+
+.dist-hero .page-grid {
+  align-items: end;
+  gap: 32px;
+}
+
+.dist-hero__heading {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.dist-hero__right p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.7;
+  color: #fff;
+}
+
+/* Labels */
+.dist-label {
+  font-size: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.dist-label--blue {
+  color: #2786EF;
+  opacity: 1;
+}
+
+/* What is DI&ST */
+.dist-what__inner {
+  max-width: 760px;
+}
+
+.dist-what__heading {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: #020206;
+  margin-bottom: 24px;
+}
+
+.dist-what__body {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.7;
+  color: #020206;
+  margin-bottom: 16px;
+}
+
+/* DI&ST Layers */
+.dist-layers__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.dist-layers__heading {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.dist-layers__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dist-layer-item {
+  display: grid;
+  grid-template-columns: 40px 160px 1fr;
+  align-items: baseline;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 12px;
+}
+
+.dist-layer-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dist-layer-item__num {
+  font-size: 12px;
+  opacity: 0.35;
+  color: #fff;
+}
+
+.dist-layer-item__name {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.dist-layer-item__desc {
+  font-size: 13px;
+  opacity: 0.5;
+  color: #fff;
+}
+
+/* Verticals card */
+.dist-verticals-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 36px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+
+.dist-verticals-card h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.dist-verticals-card p {
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.6;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .dist-layers__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 }
