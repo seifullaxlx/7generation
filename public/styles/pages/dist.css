@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #0d0d1a;
+  background: url("public/img/dist-bg.jpg");
+  background-size: cover;
 }
 
 .dist-hero .page-grid {
@@ -14,24 +15,27 @@
 
 .dist-hero__heading {
   font-size: clamp(2rem, 5vw, 3.75rem);
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.05;
   color: #fff;
 }
 
+.dist-hero__right {
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  padding: 55px 42px 48px 41px;
+  border-radius: 20px;
+}
+
 .dist-hero__right p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
-  opacity: 0.7;
   color: #fff;
 }
 
 /* Labels */
 .dist-label {
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.4;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   display: block;
   margin-bottom: 16px;
   color: #fff;
@@ -44,7 +48,8 @@
 
 /* What is DI&ST */
 .dist-what__inner {
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
 }
 
 .dist-what__heading {
@@ -56,10 +61,13 @@
 
 .dist-what__body {
   font-size: 14px;
-  line-height: 1.7;
-  opacity: 0.7;
   color: #020206;
   margin-bottom: 16px;
+}
+
+.dist-img-round {
+  width: 100%;
+  margin-top: 15px;
 }
 
 /* DI&ST Layers */
@@ -72,7 +80,7 @@
 .dist-layers__heading {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 400;
-  color: #fff;
+  color: #020206;
   margin-bottom: 32px;
 }
 
@@ -84,64 +92,64 @@
 
 .dist-layer-item {
   display: grid;
-  grid-template-columns: 40px 160px 1fr;
-  align-items: baseline;
-  padding: 16px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  gap: 12px;
-}
-
-.dist-layer-item:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  grid-template-columns: 90px 200px 1fr;
+  background: rgba(217, 217, 217, 0.17);
+  padding: 35px 34px 35px 27px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 10px;
 }
 
 .dist-layer-item__num {
-  font-size: 12px;
-  opacity: 0.35;
-  color: #fff;
+  font-size: 16px;
+  color: rgba(2, 2, 6, 0.24);
+  margin-right: 30px;
 }
 
 .dist-layer-item__name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #020206;
 }
 
 .dist-layer-item__desc {
-  font-size: 13px;
-  opacity: 0.5;
-  color: #fff;
+  font-size: 16px;
+  color: #020206;
 }
 
 /* Verticals card */
 .dist-verticals-card {
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: url("public/img/dist-layers-img.jpg");
+  color: #fafafa;
+  background-size: cover;
   border-radius: 20px;
-  padding: 36px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  padding: 40px;
+  min-height: 450px;
   height: 100%;
 }
 
+.dist-verticals-card span {
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.3);
+  margin-bottom: 30px;
+}
+
 .dist-verticals-card h3 {
-  font-size: 22px;
+  font-size: 36px;
   font-weight: 400;
-  color: #fff;
 }
 
 .dist-verticals-card p {
-  font-size: 13px;
-  line-height: 1.7;
-  opacity: 0.6;
-  color: #fff;
+  margin-top: auto;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
   .dist-layers__inner {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: stretch;
   }
 }

@@ -3,69 +3,91 @@ import '../../public/styles/pages/solutions.css'
 export default function Solutions() {
   const verticals = [
     {
+      num: '/ 01 /',
       title: 'Telecom Operators',
-      what: 'What we do:',
-      items: [
-        'DPI-based traffic intelligence and QoS management',
-        'Subscriber analytics and behavioural profiling',
-        'Revenue assurance and fraud detection',
-        'Lawful interception and regulatory compliance',
-        'Network anomaly detection and threat response',
+      bio: 'Operational context \n' +
+          'Telecom operators sit at the centre of digital ecosystems, where network behaviour directly affects financial services, platforms, and public systems.  \n' +
+          'They face simultaneous pressure to reduce fraud, improve service quality, manage growing volumes of commercial and advertising traffic, and unlock new value from infrastructure data.',
+      streams: [
+        "Risk & Anti-Fraud Intelligence",
+        "Netalytix — Data & Predictive Analytics",
+        "Infrastructure Resilience Intelligence ",
+        "Telecom Intelligence & DPI",
+        "CoS Analytics & Traffic Intelligence"
+      ],
+      outcomes: [
+        "Earlier detection of fraud and signalling abuse ",
+        "Visibility into Cost of Service by traffic type and segment",
+        "Optimised commercial and advertising traffic flows",
+        "Privacy-safe audience monetisation",
+        "Stronger positioning beyond basic connectivity"
       ],
     },
     {
+      num: '/ 02 /',
       title: 'Public-Sector Institutions',
-      what: 'What we do:',
-      items: [
-        'National digital infrastructure monitoring',
-        'Public safety analytics and incident detection',
-        'Identity and access intelligence at scale',
-        'Regulatory compliance and audit systems',
-        'Critical infrastructure protection frameworks',
+      bio: "Operational context \n" +
+          "Public digital services increasingly depend on commercial infrastructure, while accountability and systemic risk remain public responsibilities. ",
+      streams: [
+        "Early identification of systemic digital risk",
+        "Improved oversight across fragmented ecosystems",
+        "Infrastructure-aware regulation and response",
+        " Increased resilience of national digital services"
+      ],
+      outcomes: [
+        "DI&ST Framework",
+        "Behavioural & Identity Intelligence",
+        "Lawful Interception & Regulated Access",
+        "Telecom Intelligence & DPI",
+        "Infrastructure Resilience Intelligence"
       ],
     },
     {
-      title: 'Banks & Payment Service Providers',
-      what: 'What we do:',
-      items: [
-        'Transaction fraud detection and risk scoring',
-        'Behavioural biometrics and session analytics',
-        'Anti-money laundering signal enrichment',
-        'Device and identity correlation at scale',
-        'Regulatory reporting and compliance pipelines',
+      num: '/ 03 /',
+      title: 'Banks & Payment Service Providers ',
+      bio: "Operational context \n" +
+          "Financial fraud increasingly originates outside the financial perimeter — within telecom networks and digital platforms.",
+      streams: [
+        "Infrastructure-level Anti-Fraud Intelligence",
+        "Behavioural & Identity Analytics",
+        "Netalytix — Data & Predictive Analytics"
+      ],
+      outcomes: [
+        "Pre-transaction fraud detection",
+        "Reduced fraud losses with fewer false positives",
+        "Better visibility into SIM-based and identity"
       ],
     },
     {
+      num: '/ 04 /',
       title: 'Marketplaces & Platforms',
-      what: 'What we do:',
-      items: [
-        'Abuse detection and policy enforcement',
-        'Seller and buyer behavioural analytics',
-        'Fake account and coordinated activity detection',
-        'Ad fraud and inventory quality monitoring',
-        'Trust and safety scoring frameworks',
+      bio: "Operational context \n" +
+          "Coordinated abuse and synthetic activity rarely appear as isolated accounts. ",
+      streams: [
+        "Behavioural & Identity Intelligence",
+        "Risk Modelling",
+        "Predictive Analytics"
+      ],
+      outcomes: [
+        "Earlier detection of organised abuse",
+        "Improved trust and safety metrics",
+        "Reduced operational cost of manual moderation"
       ],
     },
     {
+      num: '/ 05 /',
       title: 'National & Critical Infrastructure',
-      what: 'What we do:',
-      items: [
-        'OT/IT convergence monitoring and anomaly detection',
-        'Supply chain integrity and provenance tracking',
-        'Physical-digital threat correlation',
-        'Incident response data pipelines',
-        'Resilience analytics and continuity planning',
+      bio: "Operational context \n" +
+          "Infrastructure failures propagate rapidly across sectors. ",
+      streams: [
+        "Infrastructure Resilience Intelligence",
+        "Traffic & Behavioural Analytics",
+        "Predictive & Scenario Modelling",
       ],
-    },
-    {
-      title: 'ESG & Public Safety Projects',
-      what: 'What we do:',
-      items: [
-        'Emergency location intelligence (LiveSignal)',
-        'Digital inclusion and device access programmes',
-        'Public safety analytics for government agencies',
-        'ESG reporting and impact measurement systems',
-        'Technology access for underserved communities',
+      outcomes: [
+        "Improved continuity of critical services",
+        "Reduced systemic impact of outages",
+        "Data-driven resilience planning",
       ],
     },
   ]
@@ -78,17 +100,33 @@ export default function Solutions() {
       </section>
 
       {/* Verticals grid */}
-      <section className="page section--dark sol-verticals" data-nav-theme="dark">
+      <section className="page section--light sol-verticals" data-nav-theme="dark">
         <div className="sol-verticals__grid">
-          {verticals.map(({ title, what, items }) => (
-            <div className="sol-card" key={title}>
-              <h2 className="sol-card__title">{title}</h2>
-              <p className="sol-card__what">{what}</p>
-              <ul className="sol-card__list">
-                {items.map(item => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+          {verticals.map(({ num,title,bio, streams, outcomes }) => (
+            <div className="sol-row" key={title}>
+              <div className="sol-row-card">
+                <span>{num}</span>
+                <h3>{title}</h3>
+                <p>{bio}</p>
+              </div>
+              <div className="sol-row-lists">
+                <div className="sol-list-streams">
+                  <p>Streams used:</p>
+                  {streams.map((stream, index) => (
+                      <ul key={index}>
+                        <li >{stream}</li>
+                      </ul>
+                  ))}
+                </div>
+                <div className="sol-list-outcomes">
+                  <p>Outcomes:</p>
+                  {outcomes.map((stream, index) => (
+                      <ul key={index}>
+                        <li >{stream}</li>
+                      </ul>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -97,17 +135,23 @@ export default function Solutions() {
       {/* Footer frameworks */}
       <section className="page section--dark sol-frameworks" data-nav-theme="dark">
         <div className="sol-frameworks__grid">
-          <div className="sol-fw-card">
-            <h3>Engineering & Safety</h3>
-            <p>Infrastructure-grade systems engineered for resilience, performance and regulatory alignment across all verticals.</p>
+          <div className="sol-fw">
+            <span>/ Get Started /</span>
+            <h3>Engineering Briefing</h3>
+            <p>A technical session covering<br />
+              architecture, data sources,<br/>
+              analytical models, and integration.
+            </p>
           </div>
           <div className="sol-fw-card">
             <h3>Closed Access</h3>
-            <p>Restricted deployment environments for sensitive government, defence and critical infrastructure clients.</p>
+            <p>Access to regulated and sensitive capabilities for authorised organisations.</p>
+            <button>Request</button>
           </div>
           <div className="sol-fw-card">
             <h3>DI&ST Framework</h3>
-            <p>The Digital Integrity & Safety Tech framework — a unified analytical architecture deployable across all solution verticals.</p>
+            <p>Access to regulated and sensitive capabilities for authorised organisations.</p>
+            <button>Overview</button>
           </div>
         </div>
       </section>
