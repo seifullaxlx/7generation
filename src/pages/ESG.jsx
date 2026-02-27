@@ -1,5 +1,6 @@
 import '../../public/styles/pages/esg.css'
 import IconListItem from '../components/IconListItem'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const foundationSteps = [
   { icon: '/public/img/home-icons/global-network 1.svg', text: 'Receiving devices from donors and partners' },
@@ -97,85 +98,54 @@ export default function ESG() {
       </section>
 
       {/* LiveSignal section */}
-      <section className="page section--dark livesignal-section" data-nav-theme="dark">
-        <div className="page-grid">
-          <div className="livesignal-left">
-            <span className="livesignal-tag">LiveSignal /</span>
-            <h2 className="livesignal-heading">LiveSignal</h2>
-            <p className="livesignal-desc">An intelligent monitoring service that automatically determines a person's location during emergency calls</p>
-            <div className="livesignal-activated">
-              <p>Activated in situations where a person:</p>
-              <ul>
-                <li>is in shock</li>
-                <li>is unable to speak (loses consciousness)</li>
-                <li>is unable to explain their location, including children</li>
-              </ul>
+      <section className="page section--light livesignal" >
+        <div className="livesignal-inner">
+          <div className="livesignal-card">
+            <span>/ LiveSignal /</span>
+            <h2>LiveSignal</h2>
+            <p>LiveSignal is a technology service that automatically<br />
+              determines a caller’s location during emergency calls.<br />
+              <br />
+              The solution is critical in situations where a person:
+            </p>
+            <div className="livesignal-card-list">
+              <p>
+                • is in shock<br />
+                • cannot speak or loses consciousness<br />
+                • is unable to explain their location, including children<br />
+              </p>
             </div>
-            <p className="livesignal-note">The project directly improves public safety and emergency response efficiency.</p>
-            <a href="#" className="livesignal-link">Learn more about the technology</a>
+            <p>The project directly improves public safety and emergency response efficiency.</p>
+            <button>Learn more about the technology</button>
           </div>
-          <div className="livesignal-right">
-            <p className="livesignal-cap-label">Key capabilities:</p>
-            <ul className="livesignal-capabilities">
-              <li>automatic location detection during emergency calls</li>
-              <li>Better emergency response</li>
-              <li>reduced risk of critical errors</li>
-            </ul>
-            <div className="livesignal-stats">
-              {livesignalStats.map(({ number, desc }) => (
-                <div key={number} className="livesignal-stat">
-                  <span className="livesignal-stat__number">{number}</span>
-                  <span className="livesignal-stat__desc">{desc}</span>
-                </div>
-              ))}
+          <div className="livesignal-capabilities">
+            <p style={{ marginBottom: '20px'}}>Key capabilities</p>
+            <IconListItem icon="/public/img/location.svg" text="automatic location detection during emergency calls" />
+            <IconListItem icon="/public/img/emergency.svg" text="faster emergency response" />
+            <IconListItem icon="/public/img/critical-error.svg" text="reduced risk of critical errors" />
+
+            <div className="livesignal-nums">
+              <div className="livesignal-num-item">
+                <h3>1.8</h3>
+                <p>1.8 million emergency incidents per year</p>
+              </div>
+
+              <div className="livesignal-num-item">
+                <h3>22</h3>
+                <p>22 million emergency calls in Kazakhstan in 2023</p>
+              </div>
+
+              <div className="livesignal-num-item">
+                <h3>60,415</h3>
+                <p>60,415 cases where location accuracy is critical</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contacts section */}
-      <section className="page section--light contacts-section" data-nav-theme="light">
-        <div className="page-grid">
-          <div className="contacts-left">
-            <span className="contacts-tag">/ Contact us /</span>
-            <h2 className="contacts-heading">Contacts</h2>
-            <div className="contacts-info">
-              <div>
-                <p className="contacts-label">Number /</p>
-                <p className="contacts-value">+7 (777) 777-77-77</p>
-              </div>
-              <div>
-                <p className="contacts-label">E-mail /</p>
-                <a href="mailto:7Gen@7gen.com" className="contacts-value">7Gen@7gen.com</a>
-              </div>
-            </div>
-            <div className="contacts-nav">
-              <p className="contacts-label">Navigation /</p>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/analytics">Analytics</a></li>
-                <li><a href="/dist">DIST</a></li>
-                <li><a href="/solutions">Solutions</a></li>
-                <li><a href="/company">Company</a></li>
-                <li><a href="/esg">ESG</a></li>
-                <li><a href="/video-intelligence">Video Intelligence</a></li>
-              </ul>
-            </div>
-            <div>
-              <p className="contacts-label">Address /</p>
-              <p className="contacts-value">Almaty, Nazarbayev Ave, Q1</p>
-            </div>
-          </div>
-          <div className="contacts-map">
-            <iframe
-              src="https://maps.google.com/maps?q=Almaty,Kazakhstan&output=embed"
-              allowFullScreen=""
-              loading="lazy"
-              title="Office location"
-            />
-          </div>
-        </div>
-      </section>
+      <ContactsSection />
     </>
   )
 }

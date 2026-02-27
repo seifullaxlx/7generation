@@ -187,199 +187,121 @@
   font-family: 'PP Neue Machina', sans-serif;
 }
 
-/* ── LiveSignal section ───────────────────────────────── */
-.livesignal-section .page-grid {
-  align-items: start;
+.livesignal-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  align-items: center;
 }
 
-.livesignal-tag {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.livesignal-heading {
-  font-size: 48px;
-  font-weight: 400;
-  margin-top: 8px;
-}
-
-.livesignal-desc {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.6;
-  opacity: 0.8;
-}
-
-.livesignal-activated {
-  margin-top: 4px;
-}
-
-.livesignal-activated p {
-  font-size: 14px;
-  opacity: 0.6;
-  margin-bottom: 8px;
-}
-
-.livesignal-activated ul {
-  list-style: disc;
-  padding-left: 20px;
+.livesignal-card {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  background: url("public/img/livesignal.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  color: #fafafa;
+  padding: 40px;
 }
 
-.livesignal-activated li {
-  font-size: 14px;
-  opacity: 0.8;
+.livesignal-card span {
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: 200;
 }
 
-.livesignal-note {
-  font-size: 13px;
-  opacity: 0.5;
+.livesignal-card h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.livesignal-link {
+.livesignal-card p {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 24px;
+}
+
+.livesignal-card-list {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin-bottom: 160px;
+}
+
+.livesignal-card p:last-child {
+  margin-top: auto;
+}
+
+.livesignal-card button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 20px 48px;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.livesignal-link:hover {
-  opacity: 1;
-}
-
-.livesignal-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.livesignal-right {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.livesignal-cap-label {
-  font-size: 13px;
-  opacity: 0.5;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .livesignal-capabilities {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
-.livesignal-capabilities li {
-  font-size: 14px;
-  padding-left: 24px;
-  position: relative;
-  opacity: 0.85;
-  line-height: 1.4;
-}
-
-.livesignal-capabilities li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #2786EF;
-  font-weight: 800;
-}
-
-.livesignal-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.livesignal-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.livesignal-stat__number {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: -1px;
-}
-
-.livesignal-stat__desc {
-  font-size: 12px;
-  opacity: 0.5;
-  line-height: 1.4;
-}
-
-/* ── Contacts section ────────────────────────────────── */
-.contacts-section .page-grid {
-  align-items: start;
-}
-
-.contacts-left {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.contacts-tag {
-  font-size: 14px;
-  color: #2786EF;
-  font-weight: 400;
-}
-
-.contacts-heading {
-  font-size: 48px;
+.livesignal-capabilities p {
+  font-size: 16px;
   font-weight: 400;
   color: #020206;
 }
 
-.contacts-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-
-a.contacts-value:hover {
-  text-decoration: underline;
-}
-
-.contacts-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 4px;
-}
-
-
-.contacts-nav li a:hover {
-  opacity: 1;
-}
-
-.contacts-map {
+.livesignal-capabilities li {
+  background: rgba(217, 217, 217, 0.17);
   border-radius: 20px;
-  overflow: hidden;
-  min-height: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px;
 }
 
-.contacts-map iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 360px;
-  border: none;
-  display: block;
+.livesignal-capabilities li:last-child {
+  margin-bottom: 0;
+}
+
+.li-icon {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-right: 25px;
+}
+
+.livesignal-capabilities img {
+  width: 31px;
+  height: 31px;
+}
+
+.livesignal-capabilities p {
+  margin: 0;
+}
+
+.livesignal-nums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 60px;
+}
+
+.livesignal-num-item h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.livesignal-num-item p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -438,6 +360,34 @@ a.contacts-value:hover {
 @media (min-width: 1000px) {
   .third-section-list ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .livesignal-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .livesignal-card {
+    padding: 24px;
+  }
+
+  .livesignal-card-list {
+    margin-bottom: 40px;
+  }
+
+  .livesignal-capabilities {
+    margin-top: 32px;
+  }
+
+  .livesignal-nums {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .livesignal-num-item h3 {
+    font-size: 36px;
   }
 }
 

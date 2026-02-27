@@ -1,22 +1,23 @@
 import '../../public/styles/pages/analytics.css'
 
 const netVisionCapabilities = [
-  { title: 'Infrastructure Big Data Analytics', desc: 'Real-time, large-scale analytics of network, signalling and network flows.' },
-  { title: 'Predictive Risk Models', desc: 'Forecasting churn and other subscriber online behaviour.' },
-  { title: 'Dynamic Risk Scoring', desc: 'Scoring and scoring across devices, sessions, sessions, and channels.' },
-  { title: 'Scenario & Stress Analytics', desc: 'Scenario and stress modelling to ensure system behaviour.' },
+  { title: 'Infrastructure Big Data Analytics', desc: 'Real-time, large-scale analysis of network, signalling, and telecom metadata.' },
+  { title: 'Predictive Risk Models', desc: 'Forecasting churn and other subscriber actions based on behavioural patterns.' },
+  { title: 'Dynamic Risk Scoring', desc: 'Multi-factor risk scoring across users, devices, sessions, and processes.' },
+  { title: 'Scenario & Stress Analytics', desc: 'Scenario-based modelling to assess system resilience.' },
 ]
 
 const audienceItems = [
-  { num: '01', text: 'Identify stable consumption and interest profiles' },
-  { num: '02', text: 'Form audience segments without access to personal data' },
-  { num: '03', text: 'Increase targeting accuracy and advertising inventory value' },
+  { num: '/01/', text: 'Identify stable consumption and interest profiles' },
+  { num: '/02/', text: 'Form audience segments without access to personal data' },
+  { num: '/03/', text: 'Increase targeting accuracy and advertising inventory value' },
+  { num: '*', text: 'This approach enables data monetisation at the infrastructure level, while remaining fully compliant with privacy and regulatory requirements.' },
 ]
 
 const streamCards = [
-  { title: 'Telecom Intelligence', desc: 'Traffic integrity, network telemetries, DPI, signalling analytics.' },
-  { title: 'Lawful Interception & SORM', desc: 'Regulatory and compliance frameworks, mediation, session access layers.' },
-  { title: 'Behavioural & Identity Intelligence', desc: 'Subscriber identities, usage collaboration in platforms.' },
+  { title: 'Telecom Intelligence', desc: 'Traffic integrity, network anomalies, DPI, signalling analytics' },
+  { title: 'Lawful Interception & SORM', desc: 'Regulatory architectures, mediation, secure access layers' },
+  { title: 'Behavioural & Identity Intelligence', desc: 'Behavioural graphs, synthetic identities, cross-platform patterns' },
 ]
 
 export default function Analytics() {
@@ -26,19 +27,18 @@ export default function Analytics() {
       <section className="page cap-hero section--dark" data-nav-theme="dark">
         <div className="page-grid">
           <div className="cap-hero__left">
-            <p className="cap-hero__eyebrow">Risk AI, Fraud &amp; Threat Intelligence</p>
-            <h1 className="cap-hero__heading">CAPABILITIES</h1>
-            <p className="cap-hero__num">41</p>
+            <p>Risk & Anti-Fraud Intelligence</p>
+            <h1>CAPABILITIES</h1>
           </div>
           <div className="cap-hero__right">
             <div className="cap-hero__tags">
-              <span>Infrastructure-level fraud and risk analytics.</span>
+              <p>Infrastructure-level fraud and risk analytics.</p>
             </div>
             <div className="cap-hero__tag-grid">
-              <span className="cap-tag">Network federation</span>
-              <span className="cap-tag">Near-real-time correlation</span>
-              <span className="cap-tag">Platform-abuse detection</span>
-              <span className="cap-tag">Online signal modelling</span>
+              <span className="cap-tag">Infrastructure fraud analytics</span>
+              <span className="cap-tag">Telco–bank data correlation</span>
+              <span className="cap-tag">Platform abuse detection</span>
+              <span className="cap-tag">Crime signal modelling</span>
             </div>
           </div>
         </div>
@@ -50,15 +50,26 @@ export default function Analytics() {
           <div className="cap-section__left">
             <span className="cap-label cap-label--blue">/ Analytical Layer /</span>
             <h2 className="cap-section__heading">DPI as an Analytical Layer</h2>
-            <p>In converged networks, infrastructure observability is critical.</p>
-            <p>At 7Generation, Deep Packet Inspection (DPI) is not treated as a network enforcement tool — it is an analytical layer that captures interactions and classifies emergent usage patterns.</p>
+            <p>In converged networks, infrastructure observability is critical. <br />
+              <br />
+              At 7Generation, Deep Packet Inspection (DPI) is not treated as network equipment, but as an analytical layer that captures anomalous and illegitimate usage patterns.
+            </p>
           </div>
           <div className="cap-section__right">
-            <p className="cap-section__right-label">Combined actions:</p>
+            <p className="cap-section__right-label">Combined with:</p>
             <ul className="cap-check-list">
-              <li>Network metadata</li>
-              <li>Behavioural analytics</li>
-              <li>AI-based anomaly detection</li>
+              <li>
+                <span>/ 01 /</span>
+                <p>Telecom metadata</p>
+              </li>
+              <li>
+                <span>/ 02 /</span>
+                <p>Behavioural analytics</p>
+              </li>
+              <li>
+                <span>/ 03 /</span>
+                <p>AI-based anomaly detection</p>
+              </li>
             </ul>
             <p className="cap-note">DPI becomes part of a unified data intelligence and decision support loop, defined by its rather than reactive enforcement.</p>
           </div>
@@ -66,23 +77,25 @@ export default function Analytics() {
       </section>
 
       {/* NetVision */}
-      <section className="page section--dark cap-section" data-nav-theme="dark">
-        <div className="cap-section__inner">
-          <div className="cap-section__left">
-            <span className="cap-label">/ Predictive Layer /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">NetVision —<br />Data &amp; Predictive Analytics</h2>
-            <p className="cap-body-light">NetVision is designed to process large-scale telecom data. The platform combines network analytics, data correlation, and remediation models to:</p>
-            <ul className="cap-bullet-list">
-              <li>analyse subscriber behaviour</li>
-              <li>support personalised offers, including streaming audiences</li>
-              <li>forecast risk through scoring models</li>
-              <li>identify service velocity and the operator network</li>
-            </ul>
-            <p className="cap-body-light">NetVision can operate as a standalone analytics layer or as part of a broader DI&amp;ST and DI&amp;ST stack.</p>
+      <section className="page section--light net-vision" data-nav-theme="dark">
+        <div className="net-vision__inner">
+          <div className="net-vision__left">
+            <span>/ Predictive Analytics /</span>
+            <h2 className="net-vision__heading">NetVision —<br />Data &amp; Predictive Analytics</h2>
+            <p>Netalytix is designed to process large-scale telecom data.<br />
+              The platform combines network analytics, data correlation,<br />
+              and predictive models to:<br />
+              <br />
+              • analyse subscriber behaviour<br />
+              • support personalised offers, including advertising audiences<br />
+              • forecast risk through scoring models<br />
+              • assess service quality across operator networks<br />
+            </p>
+            <p>NetVision can operate as a standalone analytics layer or as part of a broader DI&amp;ST and DI&amp;ST stack.</p>
           </div>
-          <div className="cap-section__right">
-            <h3 className="cap-subsection-heading">Key NetVision Capabilities</h3>
-            <div className="cap-kv-list">
+          <div className="net-vision__right">
+            <h3>Key NetVision Capabilities</h3>
+            <div>
               {netVisionCapabilities.map(({ title, desc }) => (
                 <div className="cap-kv-item" key={title}>
                   <h4>{title}</h4>
@@ -94,68 +107,73 @@ export default function Analytics() {
         </div>
       </section>
 
-      {/* Audience Monetisation */}
-      <section className="page section--dark cap-section cap-section--border" data-nav-theme="dark">
-        <div className="cap-section__inner">
-          <div className="cap-section__left">
-            <span className="cap-label">/ Predictive Analytics /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">Data &amp; Predictive Analytics<br />for Audience Monetisation</h2>
-            <div className="cap-kv-list cap-kv-list--col2">
-              {audienceItems.slice(0, 2).map(({ num, text }) => (
-                <div className="cap-kv-item" key={num}>
-                  <span className="cap-kv-num">{num}</span>
-                  <p>{text}</p>
-                </div>
+      <section className="section--light pred-analytics">
+        <div className="pred-analytics-inner">
+          <div className="pred-analytics-title">
+            <span>/ Predictive Analytics /</span>
+            <div>
+              <h2>Data & Predictive Analytics<br/> for Audience Monetisation</h2>
+              <p>Beyond risk and resilience use cases, Netalytix enables telecom<br />
+                operators to build privacy-safe audience segments at the<br />
+                infrastructure level.<br />
+                <br />
+                Based on network and behavioural patterns, the platform allows operators to:</p>
+            </div>
+          </div>
+          <div className="pred-analytics-content">
+            <ul>
+              {audienceItems.map(({ num, text, index }) => (
+                  <li key={index}>
+                    <span>{num}</span>
+                    <p>{text}</p>
+                  </li>
               ))}
-            </div>
-          </div>
-          <div className="cap-section__right">
-            <p className="cap-body-light">Beyond risk and resolution use cases, NetVision enables telecom operators to build privacy-safe audience segments at the infrastructure level.</p>
-            <p className="cap-body-light">Based on network and behavioural patterns, the platform achieves operations of:</p>
-            <div className="cap-kv-list cap-kv-list--col2">
-              <div className="cap-kv-item">
-                <span className="cap-kv-num">{audienceItems[2].num}</span>
-                <p>{audienceItems[2].text}</p>
-              </div>
-              <div className="cap-kv-item cap-kv-item--highlight">
-                <p>This approach enables data monetisation at the infrastructure layer while remaining fully compliant with privacy and regulatory requirements.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Regulatory */}
-      <section className="page section--dark cap-section" data-nav-theme="dark">
-        <div className="cap-section__inner">
-          <div className="cap-section__left">
-            <span className="cap-label">/ Compliance /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">Regulatory &amp;<br />Operational Compatibility</h2>
-            <p className="cap-body-light">Interoperable and regulated payloads are delivered through a compliance-driven assurance environment.</p>
-          </div>
-          <div className="cap-section__right">
-            <ul className="cap-check-list cap-check-list--light">
-              <li>Regulated localisation</li>
-              <li>National digital infrastructure</li>
-              <li>Cross-jurisdictional deployment scenarios</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Restricted Streams */}
-      <section className="page section--light cap-streams" data-nav-theme="light">
-        <span className="cap-label cap-label--blue">/ Streams /</span>
-        <h2 className="cap-streams__heading">Restricted Streams</h2>
-        <div className="cap-streams__grid">
-          {streamCards.map(({ title, desc }) => (
-            <div className="cap-stream-card" key={title}>
-              <h3>{title}</h3>
-              <p>{desc}</p>
+        <section className="page regulatory" >
+          <div className="regulatory__inner">
+            <div className="regulatory__left">
+              <span>/ Regulatory /</span>
+              <h2>Regulatory & <br />Operational Compatibility</h2>
+              <p>Sensitive and regulated capabilities are delivered <br />
+                through a controlled, closed-access environment.
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="regulatory__right">
+              <p>7Generation architectures are designed with consideration for:</p>
+              <div className="regulatory-item">
+                <span>/ 01 /</span>
+                <p>Regulated industries</p>
+              </div>
+              <div className="regulatory-item">
+                <span>/ 02 /</span>
+                <p>National digital infrastructures</p>
+              </div>
+              <div className="regulatory-item">
+                <span>/ 03 /</span>
+                <p>Cross-jurisdictional deployment scenarios</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section--light streams">
+          <div className="streams-inner">
+            <span>/ Streams /</span>
+            <h3>Restricted Streams</h3>
+            <div className="streams-cards">
+              {streamCards.map(({ title, desc }) => (
+                  <div className="streams-card" key={title}>
+                    <h4>{title}</h4>
+                    <p>{desc}</p>
+                  </div>
+              ))}
+            </div>
+          </div>
+        </section>
     </>
   )
 }
