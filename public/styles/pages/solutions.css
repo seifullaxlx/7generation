@@ -108,29 +108,11 @@
   margin-left: 20px;
 }
 
-.sol-row-card:nth-child(1) {
-  background-image: url('public/img/sol-row-1.jpg');
-}
-
-.sol-row-card:nth-child(2) {
-  background-image: url('public/img/sol-row-2.jpg');
-}
-
-.sol-row-card:nth-child(3) {
-  background-image: url('public/img/sol-row-3.jpg');
-}
-
-.sol-row-card:nth-child(4) {
-  background-image: url('public/img/sol-row-4.jpg');
-}
-
-.sol-row-card:nth-child(5) {
-  background-image: url('public/img/sol-row-5.jpg');
-}
+/* background-image set via inline style prop on SolRowCard */
 
 .sol-frameworks {
   background-size: cover;
-  background: url("public/img/sol-fw-footer.jpg") no-repeat;
+  background: url("public/img/sol-fw-footer.jpg");
 }
 
 .sol-frameworks__grid {

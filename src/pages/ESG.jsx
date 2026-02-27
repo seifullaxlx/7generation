@@ -1,4 +1,27 @@
 import '../../public/styles/pages/esg.css'
+import IconListItem from '../components/IconListItem'
+
+const foundationSteps = [
+  { icon: '/public/img/home-icons/global-network 1.svg', text: 'Receiving devices from donors and partners' },
+  { icon: '/public/img/home-icons/global-network 2.svg', text: 'Diagnostics, repair and complete data wiping' },
+  { icon: '/public/img/home-icons/global-network 3.svg', text: 'Equipment setup (headset, backpack, learning materials)' },
+  { icon: '/public/img/home-icons/global-network 7.svg', text: 'Coordination with schools and beneficiary lists' },
+  { icon: '/public/img/home-icons/global-network 11.svg', text: 'Delivery of fully prepared devices' },
+  { icon: '/public/img/home-icons/global-network 12.svg', text: 'Official handover to the child with documentation' },
+]
+
+const thirdSectionStats = [
+  { num: '/ 01 /', value: '626', desc: '626 laptops delivered to children' },
+  { num: '/ 02 /', value: '₸20', desc: '₸20 million raised for project development' },
+  { num: '/ 03 /', value: '196,100', desc: '196,100 rural children still need laptops' },
+  { num: '/ 04 /', value: '700,000', desc: 'Approximately 700,000 children across Kazakhstan lack access to devices' },
+]
+
+const livesignalStats = [
+  { number: '1.8', desc: '1.8 million emergency incidents per year' },
+  { number: '22', desc: '22 million emergency calls in households in 2022' },
+  { number: '60,415', desc: '60,415 cases where location accuracy is critical' },
+]
 
 export default function ESG() {
   return (
@@ -6,7 +29,7 @@ export default function ESG() {
       <section className="page section--hero page--hero" data-nav-theme="dark">
         <div className="page-grid">
           <div className="block">
-            <h1 className="block__heading">ESG & PUBLIC <br />SAFETY PROJECTS</h1>
+            <h1 className="block__heading">ESG &amp; PUBLIC <br />SAFETY PROJECTS</h1>
             <p className="block__heading__p">An engineering approach to real social challenges 7Generation is a technology company that designs complex digital systems for business and public-sector institutions.</p>
           </div>
           <div className="block">
@@ -32,49 +55,16 @@ export default function ESG() {
       <section className="page section--light">
         <div className="page-grid">
           <div className="second-section-title">
-            <span>/ “+1” Foundation /</span>
-            <h1>”+1” Foundation</h1>
+            <span>/ "+1" Foundation /</span>
+            <h1>"+1" Foundation</h1>
             <p>Access to technology is access to the future</p>
           </div>
           <div className="second-section-body">
             <p>How the project works</p>
             <ul>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 1.svg" alt=""/>
-                </div>
-                <p>Receiving devices from donors and partners</p>
-              </li>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 2.svg" alt=""/>
-                </div>
-                <p>Diagnostics, repair and complete data wiping</p>
-              </li>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 3.svg" alt=""/>
-                </div>
-                <p>Equipment setup (headset, backpack, learning materials)</p>
-              </li>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 7.svg" alt=""/>
-                </div>
-                <p>Coordination with schools and beneficiary lists</p>
-              </li>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 11.svg" alt=""/>
-                </div>
-                <p>Delivery of fully prepared devices</p>
-              </li>
-              <li>
-                <div className="li-icon">
-                  <img src="/public/img/home-icons/global-network 12.svg" alt=""/>
-                </div>
-                <p>Official handover to the child with documentation</p>
-              </li>
+              {foundationSteps.map(({ icon, text }) => (
+                <IconListItem key={text} icon={icon} text={text} />
+              ))}
             </ul>
           </div>
           <div className="second-section-desc">
@@ -84,40 +74,23 @@ export default function ESG() {
         </div>
       </section>
 
-
       <section className="page third-section">
         <div className="page-grid">
           <div className="third-section-list">
             <ul>
-              <li>
-                <div className="divider" />
-                <span>/ 01 /</span>
-                <h3>626</h3>
-                <p>626 laptops delivered to children</p>
-              </li>
-              <li>
-                <div className="divider" />
-                <span>/ 02 /</span>
-                <h3>₸20</h3>
-                <p>₸20 million raised for project development</p>
-              </li>
-              <li>
-                <div className="divider" />
-                <span>/ 03 /</span>
-                <h3>196,100</h3>
-                <p>196,100 rural children still need laptops</p>
-              </li>
-              <li>
-                <div className="divider" />
-                <span>/ 04 /</span>
-                <h3>700,000</h3>
-                <p>Approximately 700,000 children across Kazakhstan lack access to devices</p>
-              </li>
+              {thirdSectionStats.map(({ num, value, desc }) => (
+                <li key={num}>
+                  <div className="divider" />
+                  <span>{num}</span>
+                  <h3>{value}</h3>
+                  <p>{desc}</p>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="third-section-info">
             <span>/ Philosophy /</span>
-            <h1>By giving a laptop, we provide a tool that can change a child’s educational and life trajectory.</h1>
+            <h1>By giving a laptop, we provide a tool that can change a child's educational and life trajectory.</h1>
             <button>Support the project</button>
           </div>
         </div>
@@ -129,7 +102,7 @@ export default function ESG() {
           <div className="livesignal-left">
             <span className="livesignal-tag">LiveSignal /</span>
             <h2 className="livesignal-heading">LiveSignal</h2>
-            <p className="livesignal-desc">An intelligent monitoring service that automatically determines a person’s location during emergency calls</p>
+            <p className="livesignal-desc">An intelligent monitoring service that automatically determines a person's location during emergency calls</p>
             <div className="livesignal-activated">
               <p>Activated in situations where a person:</p>
               <ul>
@@ -149,18 +122,12 @@ export default function ESG() {
               <li>reduced risk of critical errors</li>
             </ul>
             <div className="livesignal-stats">
-              <div className="livesignal-stat">
-                <span className="livesignal-stat__number">1.8</span>
-                <span className="livesignal-stat__desc">1.8 million emergency incidents per year</span>
-              </div>
-              <div className="livesignal-stat">
-                <span className="livesignal-stat__number">22</span>
-                <span className="livesignal-stat__desc">22 million emergency calls in households in 2022</span>
-              </div>
-              <div className="livesignal-stat">
-                <span className="livesignal-stat__number">60,415</span>
-                <span className="livesignal-stat__desc">60,415 cases where location accuracy is critical</span>
-              </div>
+              {livesignalStats.map(({ number, desc }) => (
+                <div key={number} className="livesignal-stat">
+                  <span className="livesignal-stat__number">{number}</span>
+                  <span className="livesignal-stat__desc">{desc}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

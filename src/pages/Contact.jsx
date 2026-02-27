@@ -1,33 +1,34 @@
 import '../../public/styles/pages/contact.css'
+import ContactCatCard from '../components/ContactCatCard'
+
+const categories = [
+  {
+    title: 'Telecom Integration',
+    desc: 'For telecom operators, infrastructure providers, and technology partners supporting network integration, data access, and deployment.',
+  },
+  {
+    title: 'Government & Regulation',
+    desc: 'For public-sector institutions, regulators, and authorities regarding lawful interception, regulatory, and infrastructure-wide engagements.',
+  },
+  {
+    title: 'ESG Partnerships',
+    desc: 'For organisations, initiatives, and partners interested in ESG-driven collaboration, responsible technology, and digital infrastructure.',
+  },
+  {
+    title: 'Research',
+    desc: 'For academic institutions, researchers, and technology initiatives related to joint research, technology development, and academic access.',
+  },
+  {
+    title: 'Press',
+    desc: 'For media inquiries, interviews, and official statements.',
+  },
+  {
+    title: 'General Inquiries',
+    desc: 'If you are unsure which category applies to your request.',
+  },
+]
 
 export default function Contact() {
-  const categories = [
-    {
-      title: 'Telecom Integration',
-      desc: 'For telecom operators, infrastructure providers, and technology partners supporting network integration, data access, and deployment.',
-    },
-    {
-      title: 'Government & Regulation',
-      desc: 'For public-sector institutions, regulators, and authorities regarding lawful interception, regulatory, and infrastructure-wide engagements.',
-    },
-    {
-      title: 'ESG Partnerships',
-      desc: 'For organisations, initiatives, and partners interested in ESG-driven collaboration, responsible technology, and digital infrastructure.',
-    },
-    {
-      title: 'Research',
-      desc: 'For academic institutions, researchers, and technology initiatives related to joint research, technology development, and academic access.',
-    },
-    {
-      title: 'Press',
-      desc: 'For media inquiries, interviews, and official statements.',
-    },
-    {
-      title: 'General Inquiries',
-      desc: 'If you are unsure which category applies to your request.',
-    },
-  ]
-
   return (
     <>
       {/* Hero */}
@@ -46,11 +47,7 @@ export default function Contact() {
       <section className="page section--light contact-categories" data-nav-theme="light">
         <div className="contact-categories__grid">
           {categories.map(({ title, desc }) => (
-            <div className="contact-cat-card" key={title}>
-              <h3 className="contact-cat-card__title">{title}</h3>
-              <p className="contact-cat-card__desc">{desc}</p>
-              <button className="contact-cat-card__btn">Contact</button>
-            </div>
+            <ContactCatCard key={title} title={title} desc={desc} />
           ))}
         </div>
       </section>

@@ -1,5 +1,24 @@
 import '../../public/styles/pages/analytics.css'
 
+const netVisionCapabilities = [
+  { title: 'Infrastructure Big Data Analytics', desc: 'Real-time, large-scale analytics of network, signalling and network flows.' },
+  { title: 'Predictive Risk Models', desc: 'Forecasting churn and other subscriber online behaviour.' },
+  { title: 'Dynamic Risk Scoring', desc: 'Scoring and scoring across devices, sessions, sessions, and channels.' },
+  { title: 'Scenario & Stress Analytics', desc: 'Scenario and stress modelling to ensure system behaviour.' },
+]
+
+const audienceItems = [
+  { num: '01', text: 'Identify stable consumption and interest profiles' },
+  { num: '02', text: 'Form audience segments without access to personal data' },
+  { num: '03', text: 'Increase targeting accuracy and advertising inventory value' },
+]
+
+const streamCards = [
+  { title: 'Telecom Intelligence', desc: 'Traffic integrity, network telemetries, DPI, signalling analytics.' },
+  { title: 'Lawful Interception & SORM', desc: 'Regulatory and compliance frameworks, mediation, session access layers.' },
+  { title: 'Behavioural & Identity Intelligence', desc: 'Subscriber identities, usage collaboration in platforms.' },
+]
+
 export default function Analytics() {
   return (
     <>
@@ -7,7 +26,7 @@ export default function Analytics() {
       <section className="page cap-hero section--dark" data-nav-theme="dark">
         <div className="page-grid">
           <div className="cap-hero__left">
-            <p className="cap-hero__eyebrow">Risk AI, Fraud & Threat Intelligence</p>
+            <p className="cap-hero__eyebrow">Risk AI, Fraud &amp; Threat Intelligence</p>
             <h1 className="cap-hero__heading">CAPABILITIES</h1>
             <p className="cap-hero__num">41</p>
           </div>
@@ -51,7 +70,7 @@ export default function Analytics() {
         <div className="cap-section__inner">
           <div className="cap-section__left">
             <span className="cap-label">/ Predictive Layer /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">NetVision —<br />Data & Predictive Analytics</h2>
+            <h2 className="cap-section__heading cap-section__heading--light">NetVision —<br />Data &amp; Predictive Analytics</h2>
             <p className="cap-body-light">NetVision is designed to process large-scale telecom data. The platform combines network analytics, data correlation, and remediation models to:</p>
             <ul className="cap-bullet-list">
               <li>analyse subscriber behaviour</li>
@@ -59,27 +78,17 @@ export default function Analytics() {
               <li>forecast risk through scoring models</li>
               <li>identify service velocity and the operator network</li>
             </ul>
-            <p className="cap-body-light">NetVision can operate as a standalone analytics layer or as part of a broader DI&ST and DI&ST stack.</p>
+            <p className="cap-body-light">NetVision can operate as a standalone analytics layer or as part of a broader DI&amp;ST and DI&amp;ST stack.</p>
           </div>
           <div className="cap-section__right">
             <h3 className="cap-subsection-heading">Key NetVision Capabilities</h3>
             <div className="cap-kv-list">
-              <div className="cap-kv-item">
-                <h4>Infrastructure Big Data Analytics</h4>
-                <p>Real-time, large-scale analytics of network, signalling and network flows.</p>
-              </div>
-              <div className="cap-kv-item">
-                <h4>Predictive Risk Models</h4>
-                <p>Forecasting churn and other subscriber online behaviour.</p>
-              </div>
-              <div className="cap-kv-item">
-                <h4>Dynamic Risk Scoring</h4>
-                <p>Scoring and scoring across devices, sessions, sessions, and channels.</p>
-              </div>
-              <div className="cap-kv-item">
-                <h4>Scenario & Stress Analytics</h4>
-                <p>Scenario and stress modelling to ensure system behaviour.</p>
-              </div>
+              {netVisionCapabilities.map(({ title, desc }) => (
+                <div className="cap-kv-item" key={title}>
+                  <h4>{title}</h4>
+                  <p>{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -90,16 +99,14 @@ export default function Analytics() {
         <div className="cap-section__inner">
           <div className="cap-section__left">
             <span className="cap-label">/ Predictive Analytics /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">Data & Predictive Analytics<br />for Audience Monetisation</h2>
+            <h2 className="cap-section__heading cap-section__heading--light">Data &amp; Predictive Analytics<br />for Audience Monetisation</h2>
             <div className="cap-kv-list cap-kv-list--col2">
-              <div className="cap-kv-item">
-                <span className="cap-kv-num">01</span>
-                <p>Identify stable consumption and interest profiles</p>
-              </div>
-              <div className="cap-kv-item">
-                <span className="cap-kv-num">02</span>
-                <p>Form audience segments without access to personal data</p>
-              </div>
+              {audienceItems.slice(0, 2).map(({ num, text }) => (
+                <div className="cap-kv-item" key={num}>
+                  <span className="cap-kv-num">{num}</span>
+                  <p>{text}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="cap-section__right">
@@ -107,8 +114,8 @@ export default function Analytics() {
             <p className="cap-body-light">Based on network and behavioural patterns, the platform achieves operations of:</p>
             <div className="cap-kv-list cap-kv-list--col2">
               <div className="cap-kv-item">
-                <span className="cap-kv-num">03</span>
-                <p>Increase targeting accuracy and advertising inventory value</p>
+                <span className="cap-kv-num">{audienceItems[2].num}</span>
+                <p>{audienceItems[2].text}</p>
               </div>
               <div className="cap-kv-item cap-kv-item--highlight">
                 <p>This approach enables data monetisation at the infrastructure layer while remaining fully compliant with privacy and regulatory requirements.</p>
@@ -123,7 +130,7 @@ export default function Analytics() {
         <div className="cap-section__inner">
           <div className="cap-section__left">
             <span className="cap-label">/ Compliance /</span>
-            <h2 className="cap-section__heading cap-section__heading--light">Regulatory &<br />Operational Compatibility</h2>
+            <h2 className="cap-section__heading cap-section__heading--light">Regulatory &amp;<br />Operational Compatibility</h2>
             <p className="cap-body-light">Interoperable and regulated payloads are delivered through a compliance-driven assurance environment.</p>
           </div>
           <div className="cap-section__right">
@@ -141,18 +148,12 @@ export default function Analytics() {
         <span className="cap-label cap-label--blue">/ Streams /</span>
         <h2 className="cap-streams__heading">Restricted Streams</h2>
         <div className="cap-streams__grid">
-          <div className="cap-stream-card">
-            <h3>Telecom Intelligence</h3>
-            <p>Traffic integrity, network telemetries, DPI, signalling analytics.</p>
-          </div>
-          <div className="cap-stream-card">
-            <h3>Lawful Interception & SORM</h3>
-            <p>Regulatory and compliance frameworks, mediation, session access layers.</p>
-          </div>
-          <div className="cap-stream-card">
-            <h3>Behavioural & Identity Intelligence</h3>
-            <p>Subscriber identities, usage collaboration in platforms.</p>
-          </div>
+          {streamCards.map(({ title, desc }) => (
+            <div className="cap-stream-card" key={title}>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>

@@ -1,80 +1,101 @@
 import '../../public/styles/pages/careers.css'
+import IconListItem from "../components/IconListItem.jsx";
+
+const whyItems = [
+  { icon: '/public/img/infra.svg', text: 'Infrastructure-scale data' },
+  { icon: '/public/img/prod.svg', text: 'Real production environments' },
+  { icon: '/public/img/home-icons/blockchain.svg', text: 'Problems that cannot be solved with generic tools' },
+]
+
+const valuesItems = [
+  { icon: '/public/img/energy.svg', text: 'We build teams of energetic, talented, and decisive people' },
+  { icon: '/public/img/people.svg', text: 'We prioritise people when building the organisation' },
+  { icon: '/public/img/impact.svg', text: 'We choose projects that create meaningful impact' },
+]
+
+const insideItems = [
+  { icon: '/public/img/analytics.svg', text: 'Financial support in key life moments' },
+  { icon: '/public/img/meal.svg', text: 'Daily office breakfasts' },
+  { icon: '/public/img/translate.svg', text: 'Language courses during work hours' },
+  { icon: '/public/img/box.svg', text: 'Welcome Box for new team members' },
+  { icon: '/public/img/health.svg', text: 'Fitness and health compensation' },
+  { icon: '/public/img/international.svg', text: 'Participation in international conferences' },
+  { icon: '/public/img/coin.svg', text: 'Dreamcoin — internal reward currency' },
+  { icon: '/public/img/sports.svg', text: 'Sports and corporate events' },
+]
 
 export default function Careers() {
   return (
     <>
       {/* Hero */}
-      <section className="page car-hero section--dark" data-nav-theme="dark">
+      <section className="page car-hero">
         <div className="page-grid">
           <div>
             <h1 className="car-hero__heading">CAREERS</h1>
-            <p className="car-hero__sub">Build infrastructure that matters. 7Generation is a deep-tech company working at the intersection of telecom intelligence, data analytics, and public safety.</p>
-          </div>
-          <div className="car-hero__right">
-            <p>We hire engineers, analysts, and builders who want to work on systems that operate at scale and create measurable impact.</p>
           </div>
         </div>
       </section>
 
       {/* Why + DNA */}
-      <section className="page section--dark car-why" data-nav-theme="dark">
+      <section className="page section--light car-why" data-nav-theme="dark">
         <div className="car-why__inner">
           <div className="car-why__left">
+            <span>/ Why /</span>
             <h2 className="car-why__heading">Why 7Generation</h2>
+            <p>Working at 7Generation means building systems that operate below<br />
+              the application layer — where correctness, stability, and integrity<br />
+              matter most. You will work on:
+            </p>
             <ul className="car-why__list">
-              <li>Work on production-grade systems used by telecom operators and government institutions</li>
-              <li>Collaborate with engineers who treat infrastructure as a long-term responsibility</li>
-              <li>Contribute to projects that directly improve public safety and digital integrity</li>
+              {whyItems.map(({ icon, text }) => (
+                <IconListItem icon={icon} text={text} />
+              ))}
             </ul>
           </div>
           <div className="car-dna-card">
-            <span className="car-label">Our DNA /</span>
-            <p>We are an engineering company first. Everything we ship is measured, documented and maintained. We value depth over breadth, ownership over coverage, and outcomes over output.</p>
-            <p>We don't move fast and break things. We build things that last.</p>
+            <span>/ Why/</span>
+            <h4>Our DNA</h4>
+            <p>
+              The team is united by interest in complex problems and a commitment to precision. Ideas here move from hypothesis to working systems — and only then into production environments.
+              <br />
+              <br />
+              Engineering courage is measured not by ambition, but by reliability of implementation.
+            </p>
+            <button>Vacancies</button>
           </div>
         </div>
       </section>
 
       {/* Values */}
       <section className="page section--light car-values" data-nav-theme="light">
+        <span>/ Values /</span>
         <h2 className="car-values__heading">Our Values</h2>
         <div className="car-values__grid">
-          <div className="car-value-card">
-            <h3>Engineering Rigour</h3>
-            <p>We hold our systems to the standard of infrastructure — not prototypes. Correctness, observability and fault tolerance are baseline requirements.</p>
-          </div>
-          <div className="car-value-card">
-            <h3>Long-term Ownership</h3>
-            <p>We build with the expectation that we will maintain it. Documentation, test coverage and operational clarity are part of the work.</p>
-          </div>
-          <div className="car-value-card">
-            <h3>Honest Communication</h3>
-            <p>We share problems early. There are no status meetings designed to look good — only direct conversations about what is working and what is not.</p>
-          </div>
-          <div className="car-value-card">
-            <h3>Impact over Volume</h3>
-            <p>We are not optimising for ticket throughput. Every decision is evaluated by whether it moves the product or the platform forward in a meaningful way.</p>
-          </div>
+          {valuesItems.map(({ icon, text }) => (
+            <div className="car-values__item" key={text}>
+              <div className="car-values-icon">
+                <img src={icon} alt="" />
+              </div>
+              <p>{text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Inside 7Generation */}
       <section className="page section--dark car-inside" data-nav-theme="dark">
-        <h2 className="car-inside__heading">Inside 7Generation</h2>
+        <div className="car-inside__heading">
+          <span>/ Benefits /</span>
+          <h2>Inside 7Generation</h2>
+          <p>We create conditions that allow engineers and<br /> researchers to focus on quality and growth.</p>
+        </div>
         <div className="car-inside__grid">
-          {[
-            'Training reports and professional development',
-            'Hackly office initiatives',
-            'Language courses and training',
-            'Welcome for new employees',
-            'Time and health insurance programs',
-            'Remote — working days',
-            'Fitness — training available',
-            'Equipment and working space',
-            'Annual and sick leave considered',
-          ].map(item => (
-            <div className="car-inside-card" key={item}>
-              <p>{item}</p>
+          {insideItems.map(({ icon, text }, index) => (
+            <div className="car-inside-card" key={index}>
+              <div className="car-inside-card-icon">
+                <img src={icon} alt="#"/>
+              </div>
+              <p>{text}</p>
             </div>
           ))}
         </div>

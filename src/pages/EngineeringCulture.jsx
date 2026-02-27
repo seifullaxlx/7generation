@@ -1,5 +1,20 @@
 import '../../public/styles/pages/engineering-culture.css'
 
+const capCards = [
+  {
+    title: 'Infrastructure Thinking',
+    desc: 'Every system is designed to operate at telecom scale — not as a prototype, but as production infrastructure from day one. Reliability, fault tolerance, and horizontal scalability are non-negotiable constraints.',
+  },
+  {
+    title: 'Data & Signals',
+    desc: 'The team works directly with raw network telemetry — building processing pipelines, analytical models and detection systems from the ground up rather than relying on pre-processed data vendors.',
+  },
+  {
+    title: 'Laboratory Environments',
+    desc: '7Generation maintains internal lab environments that replicate real network conditions — enabling safe testing of detection models and integration scenarios before deployment.',
+  },
+]
+
 export default function EngineeringCulture() {
   return (
     <>
@@ -19,7 +34,7 @@ export default function EngineeringCulture() {
       <section className="page section--dark ec-rd" data-nav-theme="dark">
         <div className="ec-rd__inner">
           <div className="ec-rd__left">
-            <span className="ec-label">/ Research & Development /</span>
+            <span className="ec-label">/ Research &amp; Development /</span>
             <h2 className="ec-rd__heading">The teams that drive the platform forward</h2>
             <ul className="ec-rd__list">
               <li>Build new detection capabilities</li>
@@ -30,17 +45,17 @@ export default function EngineeringCulture() {
           </div>
           <div className="ec-rd__right">
             <div className="ec-rd__card">
-              <p>7Generation's R&D function is built around two closely integrated teams.</p>
+              <p>7Generation's R&amp;D function is built around two closely integrated teams.</p>
               <p>Each team operates with clear domain ownership while sharing a common data infrastructure and engineering standards.</p>
             </div>
           </div>
         </div>
-        <p className="ec-rd__tagline">7Generation's R&D function is built around two closely integrated teams.</p>
+        <p className="ec-rd__tagline">7Generation's R&amp;D function is built around two closely integrated teams.</p>
       </section>
 
       {/* Signatures & Analytics Team */}
       <section className="page section--dark ec-team-section" data-nav-theme="dark">
-        <h2 className="ec-team-section__heading">Signatures & Analytics Team</h2>
+        <h2 className="ec-team-section__heading">Signatures &amp; Analytics Team</h2>
         <p className="ec-team-section__sub">The team develops analytical models and detection signatures.</p>
         <ul className="ec-team-section__list">
           <li>Develops detection signatures and classification models</li>
@@ -52,7 +67,7 @@ export default function EngineeringCulture() {
 
       {/* Data Capture & Processing Team */}
       <section className="page section--dark ec-team-section ec-team-section--border" data-nav-theme="dark">
-        <h2 className="ec-team-section__heading">Data Capture & Processing Team</h2>
+        <h2 className="ec-team-section__heading">Data Capture &amp; Processing Team</h2>
         <p className="ec-team-section__sub">The team owns the pipeline from raw network telemetry to structured events.</p>
         <div className="ec-team-section__cols">
           <ul className="ec-team-section__list">
@@ -70,18 +85,12 @@ export default function EngineeringCulture() {
       <section className="page section--dark ec-capabilities" data-nav-theme="dark">
         <h2 className="ec-capabilities__heading">Unique Engineering Capabilities</h2>
         <div className="ec-capabilities__grid">
-          <div className="ec-cap-card">
-            <h3>Infrastructure Thinking</h3>
-            <p>Every system is designed to operate at telecom scale — not as a prototype, but as production infrastructure from day one. Reliability, fault tolerance, and horizontal scalability are non-negotiable constraints.</p>
-          </div>
-          <div className="ec-cap-card">
-            <h3>Data & Signals</h3>
-            <p>The team works directly with raw network telemetry — building processing pipelines, analytical models and detection systems from the ground up rather than relying on pre-processed data vendors.</p>
-          </div>
-          <div className="ec-cap-card">
-            <h3>Laboratory Environments</h3>
-            <p>7Generation maintains internal lab environments that replicate real network conditions — enabling safe testing of detection models and integration scenarios before deployment.</p>
-          </div>
+          {capCards.map(({ title, desc }) => (
+            <div className="ec-cap-card" key={title}>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
