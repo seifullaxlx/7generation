@@ -21,20 +21,32 @@ const capabilities = [
 
 const problems = [
   {
-    title: 'Anomalous behaviour goes unnoticed',
-    desc: 'Without behavioural baselines, operators cannot distinguish normal traffic spikes from coordinated attacks, fraud rings or regulatory violations in real time.',
+    num: '/ 01 /',
+    title: 'Abnormal behaviour goes unnoticed',
+    desc: 'Many suspicious scenarios in networks and data flows do not look like incidents.\n' +
+        'We identify unusual and hidden behaviour that standard monitoring and security tools miss. ',
   },
   {
+    num: '/ 02 /',
     title: 'Fraud and abuse are detected too late',
-    desc: 'Rule-based systems miss evolving fraud patterns. By the time alerts fire, millions in revenue have already been lost and customers impacted.',
+    desc: 'Most systems react only after damage has occurred. We detect suspicious activity at the infrastructure level — before it reaches transactions or services. Malicious activity mimics normal usage\n' +
+        '\n' +
+        'Automation, bots, and coordinated actions are designed to blend into legitimate traffic.\n' +
+        'We distinguish natural behaviour from artificial and coordinated patterns using behavioural\n' +
+        'signatures.',
   },
   {
+    num: '/ 03 /',
     title: 'There is no unified view of what is happening in the network',
-    desc: 'Siloed systems — OSS, BSS, security, analytics — produce fragmented data with no single source of truth, making root-cause analysis slow and unreliable.',
+    desc: 'Data is scattered across network layers, platforms, and systems.\n' +
+        '\n' +
+        'We connect these signals into a coherent picture of how the infrastructure actually operates.\n' +
+        '+ управление трафиком и CVM для нужд мобильных операторов',
   },
   {
+    num: '/ 04 /',
     title: 'Operators lack visibility and control over their own traffic',
-    desc: 'Legacy DPI systems offer coarse classification with no subscriber-level context. Operators cannot enforce policies, monetise data, or meet compliance obligations.',
+    desc: 'We enable intelligent traffic management and data-driven QoS control to maintain service quality at scale.',
   },
 ]
 
@@ -45,16 +57,21 @@ export default function Company() {
       <section className="page company-hero section--dark" data-nav-theme="dark">
         <div className="page-grid">
           <div className="company-hero__left">
-            <h1 className="company-hero__heading">ABOUT<br />COMPANY</h1>
+            <h1 className="company-hero__heading">ABOUT COMPANY</h1>
+            <p className="company-hero__label">7Generation is a deep-tech company specializing in infrastructure-level data<br />
+              intelligence for service providers and public-sector institutions.<br />
+              It builds advanced systems for real-time data processing, analytics, and digital<br />
+              risk insight — targeting high-load telecom, security, and governance use cases.
+            </p>
           </div>
           <div className="company-hero__right">
-            <div className="company-hero__col">
-              <span className="company-hero__label">Overview / Telecom</span>
-              <p>7Generation is a deep-tech company that builds software and data infrastructure for telecom operators, regulators, and enterprises across CIS and MENA markets.</p>
-            </div>
-            <div className="company-hero__col">
-              <span className="company-hero__label">Mission / Principles</span>
-              <p>We believe digital infrastructure should be transparent, accountable and resilient. Every product we build is designed for scale, compliance and long-term operability.</p>
+            <div className="company-hero__info">
+              <p>KazDream → 7Generation <br/>
+                Kazdream is a technology holding focused on building and operating<br />
+                complex digital systems at scale. 7Generation is Kazdream’s export brand,<br />
+                created to deliver infrastructure-level data intelligence to international<br />
+                providers and public-sector institutions.
+              </p>
             </div>
           </div>
         </div>
@@ -62,6 +79,7 @@ export default function Company() {
 
       {/* Core Capabilities */}
       <section className="page section--light company-capabilities" data-nav-theme="light">
+        <span>/ Capabilities /</span>
         <h2 className="company-section-heading">Core Capabilities</h2>
         <div className="company-capabilities__grid">
           {capabilities.map(({ title, desc }) => (
@@ -74,11 +92,15 @@ export default function Company() {
       </section>
 
       {/* Problems We Solve */}
-      <section className="page section--dark company-problems" data-nav-theme="dark">
-        <h2 className="company-section-heading">Problems We Solve</h2>
+      <section className="page company-problems" data-nav-theme="dark">
+        <div className="company-problems-title">
+          <span>/ Problems /</span>
+          <h2>Problems We Solve</h2>
+        </div>
         <div className="company-problems__grid">
-          {problems.map(({ title, desc }) => (
+          {problems.map(({ num, title, desc }) => (
             <div className="company-problem-card" key={title}>
+              <span>{num}</span>
               <h3>{title}</h3>
               <p>{desc}</p>
             </div>

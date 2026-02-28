@@ -4,19 +4,19 @@ import ContactCatCard from '../components/ContactCatCard'
 const categories = [
   {
     title: 'Telecom Integration',
-    desc: 'For telecom operators, infrastructure providers, and technology partners supporting network integration, data access, and deployment.',
+    desc: 'For telecom operators, infrastructure providers, and technology partners exploring network integration, data access, and deployment.',
   },
   {
     title: 'Government & Regulation',
-    desc: 'For public-sector institutions, regulators, and authorities regarding lawful interception, regulatory, and infrastructure-wide engagements.',
+    desc: 'For public-sector institutions, regulators, and authorised bodies regarding lawful, regulated, and infrastructure-level engagements',
   },
   {
     title: 'ESG Partnerships',
-    desc: 'For organisations, initiatives, and partners interested in ESG-driven collaboration, responsible technology, and digital infrastructure.',
+    desc: 'For organisations, initiatives, and partners interested in ESG-driven collaboration, responsible technology, and sustainable digital infrastructure.',
   },
   {
     title: 'Research',
-    desc: 'For academic institutions, researchers, and technology initiatives related to joint research, technology development, and academic access.',
+    desc: 'For academic institutions, researchers, and technology initiatives related to joint research, methodology development, and applied studies.',
   },
   {
     title: 'Press',

@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #0d0d1a;
+  background: url("public/img/engineering-culture.jpg");
+  background-size: cover;
 }
 
 .ec-hero .page-grid {
@@ -13,10 +14,9 @@
 }
 
 .ec-hero__heading {
-  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   font-weight: 400;
-  line-height: 1;
-  color: #fff;
+  color: #fafafa;
 }
 
 .ec-hero__right p {
@@ -26,11 +26,87 @@
   color: #fff;
 }
 
+
+.ec-rd__right,
+.ec-rd__left {
+  flex: 1;
+}
+
+.ec-rd__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.ec-rd__left li {
+  background: rgba(217, 217, 217, 0.17);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+
+.ec-rd__left li p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.ec-rd__left li:last-child {
+  margin-bottom: 0;
+}
+
+.li-icon {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-right: 25px;
+}
+
+.ec-rd__left img {
+  width: 31px;
+  height: 31px;
+}
+
+.ec-rd__left p {
+  margin: 0;
+}
+
+.ec-rd__p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.ec-rd__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: url("public/img/research-develop.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  color: #fafafa;
+  padding: 55px 36px;
+}
+
+.ec-rd__card p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.ec-rd__card span {
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  font-size: 14px;
+  font-weight: 200;
+  border-radius: 20px;
+  margin-top: auto;
+  padding: 33px;
+}
+
 /* Labels */
 .ec-label {
   font-size: 12px;
-  opacity: 0.4;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   display: block;
   margin-bottom: 12px;
@@ -39,16 +115,14 @@
 
 /* R&D */
 .ec-rd__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
 }
 
 .ec-rd__heading {
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 400;
-  color: #fff;
   margin-bottom: 20px;
   margin-top: 8px;
 }
@@ -62,7 +136,6 @@
 
 .ec-rd__list li {
   font-size: 14px;
-  color: #fff;
   opacity: 0.65;
   padding-left: 20px;
   position: relative;
@@ -75,28 +148,11 @@
   opacity: 0.4;
 }
 
-.ec-rd__card {
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 20px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
 
-.ec-rd__card p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #fff;
-  opacity: 0.75;
-}
 
 .ec-rd__tagline {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
   opacity: 0.85;
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 32px;
@@ -114,7 +170,6 @@
 .ec-team-section__heading {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 400;
-  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -153,15 +208,147 @@
   gap: 24px;
 }
 
+.ec-rds {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* R&D Structure */
+.ec-rds__label {
+  color: #2786EF;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.ec-rds-detail {
+  background: url("public/img/signature-analysis.jpg");
+  background-size: cover;
+}
+
+.ec-rds__heading {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.ec-rds-detail__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.ec-rds-detail__name {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.ec-rds-detail__sub {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.ec-rds-detail__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.ec-rds__heading br {
+  display: none;
+}
+
+.ec-rds-detail__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 16px;
+  color: #fafafa;
+}
+
+.ec-rds-detail__card span {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.ec-rds-detail__card img {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+}
+
+.ec-rds-detail__card--outcome {
+  padding-left: 30px;
+  border-color: #4d9fff;
+  color: #fafafa;
+}
+
+.ec-rds-detail__card--outcome img {
+  width: 28px;
+  height: 28px;
+}
+
+.ec-rds-detail__right p {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+/* Data Capture & Processing Team */
+.ec-capture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ec-capture__name {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  margin: 12px 0 8px;
+}
+
+.ec-capture__sub {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.ec-capture .ec-rds-detail__grid {
+  width: 100%;
+  text-align: left;
+}
+
+.ec-capture__card {
+  background: rgba(217, 217, 217, 0.17);
+}
+
+.ec-capture__card span {
+  color: #020206;
+}
+
 /* Unique capabilities */
 .ec-capabilities {
-  background: #0d0d1a;
+  background: url("public/img/unique-eng.jpg");
+  background-size: cover;
+}
+
+.ec-capabilities span {
+  color: rgba(250, 250, 250, 0.3);
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .ec-capabilities__heading {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 400;
   color: #fff;
+  margin-top: 30px;
   margin-bottom: 32px;
 }
 
@@ -172,31 +359,46 @@
 }
 
 .ec-cap-card {
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 16px;
+  border: 1px solid rgba(250,250,250,0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(13px);
+  min-height: 280px;
   padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+}
+
+.ec-capabilities__intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.ec-cap-card span {
+  font-size: 16px;
+  font-weight: 200;
+  color: rgba(250, 250, 250, 0.3);
 }
 
 .ec-cap-card h3 {
-  font-size: 16px;
+  font-size: 32px;
+  margin-top: auto;
   font-weight: 400;
-  color: #fff;
+  color: #fafafa;
+  margin-bottom: 20px;
 }
 
 .ec-cap-card p {
-  font-size: 13px;
-  opacity: 0.6;
-  line-height: 1.6;
-  color: #fff;
+  font-size: 16px;
+  color: #fafafa;
 }
 
 @media (min-width: 768px) {
   .ec-rd__inner {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
+    flex-direction: row;
+    gap: 32px;
+    align-items: stretch;
   }
 
   .ec-team-section__cols {
@@ -205,5 +407,27 @@
 
   .ec-capabilities__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ec-rds-detail__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ec-rds-detail__grid {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ec-rds__heading br {
+    display: inline;
+  }
+
+  .ec-capabilities__intro {
+    grid-template-columns: 45% 55%;
+    gap: 0;
+  }
+
+  .ec-cap-card {
+    min-height: 383px;
   }
 }
