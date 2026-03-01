@@ -46,9 +46,9 @@ export default function EngineeringCulture() {
             <span className="ec-label">/ Research &amp; Development /</span>
             <h2 className="ec-rd__heading">Research & Development</h2>
             <p className="ec-rd__p" style={{ marginBottom: '33px'}}>This approach enables:</p>
-            <IconListItem icon="/public/img/techno.svg" text="Technological independence" />
-            <IconListItem icon="/public/img/customization.svg" text="Deep customisation of solutions" />
-            <IconListItem icon="/public/img/pipelines.svg" text="End-to-end control over data and analytics pipelines" />
+            <IconListItem icon="/img/techno.svg" text="Technological independence" />
+            <IconListItem icon="/img/customization.svg" text="Deep customisation of solutions" />
+            <IconListItem icon="/img/pipelines.svg" text="End-to-end control over data and analytics pipelines" />
           </div>
           <div className="ec-rd__right">
             <div className="ec-rd__card">
@@ -88,19 +88,19 @@ export default function EngineeringCulture() {
           </div>
           <div className="ec-rds-detail__grid">
             <div className="ec-rds-detail__card">
-              <img src="/public/img/beh-models.svg" alt="" />
+              <img src="/img/beh-models.svg" alt="" />
               <span>Behavioural models</span>
             </div>
             <div className="ec-rds-detail__card">
-              <img src="/public/img/detection-logic.svg" alt="" />
+              <img src="/img/detection-logic.svg" alt="" />
               <span>Detection logic</span>
             </div>
             <div className="ec-rds-detail__card">
-              <img src="/public/img/analytical-sign.svg" alt="" />
+              <img src="/img/analytical-sign.svg" alt="" />
               <span>Analytical signatures</span>
             </div>
             <div className="ec-rds-detail__card ec-rds-detail__card--outcome">
-              <img src="/public/img/outcome.svg" alt="" />
+              <img src="/img/outcome.svg" alt="" />
               <span>Outcome: high analytical precision in complex and noisy digital environments.</span>
             </div>
           </div>
@@ -115,19 +115,19 @@ export default function EngineeringCulture() {
         <div className="ec-rds-detail__grid">
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/public/img/home-icons/blockchain.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/home-icons/blockchain.svg" alt="" />
             </div>
             <span>Network packets</span>
           </div>
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/public/img/network.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/network.svg" alt="" />
             </div>
             <span>Data extraction mechanisms</span>
           </div>
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/public/img/data.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/data.svg" alt="" />
             </div>
             <span>Protocols</span>
           </div>

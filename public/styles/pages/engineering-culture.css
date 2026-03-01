@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("public/img/engineering-culture.jpg");
+  background: url("/img/engineering-culture.jpg");
   background-size: cover;
 }
 
@@ -83,7 +83,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: url("public/img/research-develop.jpg");
+  background: url("/img/research-develop.jpg");
   background-size: cover;
   border-radius: 20px;
   color: #fafafa;
@@ -224,7 +224,7 @@
 }
 
 .ec-rds-detail {
-  background: url("public/img/signature-analysis.jpg");
+  background: url("/img/signature-analysis.jpg");
   background-size: cover;
 }
 
@@ -334,7 +334,7 @@
 
 /* Unique capabilities */
 .ec-capabilities {
-  background: url("public/img/unique-eng.jpg");
+  background: url("/img/unique-eng.jpg");
   background-size: cover;
 }
 

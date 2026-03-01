@@ -197,7 +197,7 @@
 .livesignal-card {
   display: flex;
   flex-direction: column;
-  background: url("public/img/livesignal.jpg");
+  background: url("/img/livesignal.jpg");
   background-size: cover;
   border-radius: 20px;
   color: #fafafa;

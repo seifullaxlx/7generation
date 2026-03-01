@@ -7,27 +7,27 @@ import HomeCard from '../components/HomeCard'
 
 const why7gItems = [
   {
-    icon: '/public/img/home-icons/find.svg',
+    icon: '/img/home-icons/find.svg',
     title: 'Data intelligence, not static reports',
     description: 'We analyse digital system behaviour end-to-end, not isolated incidents, alerts, or services.',
   },
   {
-    icon: '/public/img/home-icons/wifi.svg',
+    icon: '/img/home-icons/wifi.svg',
     title: <>Infrastructure observability <br /> (Infrastructure Truth)</>,
     description: 'Working with primary signals — traffic, metadata, behaviour — provides earlier and more accurate insight into systemic risk.',
   },
   {
-    icon: '/public/img/home-icons/settings.svg',
+    icon: '/img/home-icons/settings.svg',
     title: 'Pre-transaction risk detection',
     description: 'Fraud, abuse, and anomalies are identified at the stage where digital processes are formed, not after damage has occurred.',
   },
   {
-    icon: '/public/img/home-icons/blockchain.svg',
+    icon: '/img/home-icons/blockchain.svg',
     title: <>DI&amp;ST as the next stage <br /> of mature cybersecurity</>,
     description: 'Digital Integrity & Safety Tech extends traditional cybersecurity where risks become economic, regulatory, and cross-sectoral.',
   },
   {
-    icon: '/public/img/home-icons/export.svg',
+    icon: '/img/home-icons/export.svg',
     title: 'Export-grade engineering',
     description: 'Solutions are designed for scale, regulatory alignment, and deployment across international markets.',
   },
@@ -74,9 +74,9 @@ export default function Home() {
           <div className="second-section-body" style={{ display: "flex", flexDirection: "column", margin: "auto" }}>
             <p style={{ marginBottom: "24px"}}>7Generation works with infrastructure-level data, including:</p>
             <ul>
-              <IconListItem icon="/public/img/home-icons/network.png" text="Network traffic and signalling flows" />
-              <IconListItem icon="/public/img/home-icons/telecom.png" text="Telecom and service metadata" />
-              <IconListItem icon="/public/img/home-icons/behavioural.png" text="Behavioural and transactional patterns" />
+              <IconListItem icon="/img/home-icons/network.png" text="Network traffic and signalling flows" />
+              <IconListItem icon="/img/home-icons/telecom.png" text="Telecom and service metadata" />
+              <IconListItem icon="/img/home-icons/behavioural.png" text="Behavioural and transactional patterns" />
             </ul>
             <p style={{ marginTop: "37px" }}>to build a ground-truth view of how digital systems actually operate, rather than how they are represented at the service or application layer.</p>
           </div>

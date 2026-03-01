@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("public/img/analytics.jpg");
+  background: url("/img/analytics.jpg");
   background-size: cover;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .net-vision {
-  background: url("public/img/netvision.jpg");
+  background: url("/img/netvision.jpg");
   background-size: cover;
 }
 
@@ -299,7 +299,7 @@
 }
 
 .regulatory {
-  background: url("public/img/regulatory.jpg");
+  background: url("/img/regulatory.jpg");
 }
 
 .regulatory__inner {
@@ -416,9 +416,9 @@
   color: #020206;
 }
 
-.streams-card:nth-child(1) { background: url("public/img/list-1.jpg"); }
-.streams-card:nth-child(2) { background: url("public/img/list-2.jpg"); }
-.streams-card:nth-child(3) { background: url("public/img/list-3.jpg"); }
+.streams-card:nth-child(1) { background: url("/img/list-1.jpg"); }
+.streams-card:nth-child(2) { background: url("/img/list-2.jpg"); }
+.streams-card:nth-child(3) { background: url("/img/list-3.jpg"); }
 
 @media (max-width: 767px) {
   /* Hero */

@@ -3,12 +3,12 @@ import IconListItem from '../components/IconListItem'
 import ContactsSection from "../components/ContactsSection.jsx";
 
 const foundationSteps = [
-  { icon: '/public/img/home-icons/global-network 1.svg', text: 'Receiving devices from donors and partners' },
-  { icon: '/public/img/home-icons/global-network 2.svg', text: 'Diagnostics, repair and complete data wiping' },
-  { icon: '/public/img/home-icons/global-network 3.svg', text: 'Equipment setup (headset, backpack, learning materials)' },
-  { icon: '/public/img/home-icons/global-network 7.svg', text: 'Coordination with schools and beneficiary lists' },
-  { icon: '/public/img/home-icons/global-network 11.svg', text: 'Delivery of fully prepared devices' },
-  { icon: '/public/img/home-icons/global-network 12.svg', text: 'Official handover to the child with documentation' },
+  { icon: '/img/home-icons/global-network 1.svg', text: 'Receiving devices from donors and partners' },
+  { icon: '/img/home-icons/global-network 2.svg', text: 'Diagnostics, repair and complete data wiping' },
+  { icon: '/img/home-icons/global-network 3.svg', text: 'Equipment setup (headset, backpack, learning materials)' },
+  { icon: '/img/home-icons/global-network 7.svg', text: 'Coordination with schools and beneficiary lists' },
+  { icon: '/img/home-icons/global-network 11.svg', text: 'Delivery of fully prepared devices' },
+  { icon: '/img/home-icons/global-network 12.svg', text: 'Official handover to the child with documentation' },
 ]
 
 const thirdSectionStats = [
@@ -120,9 +120,9 @@ export default function ESG() {
           </div>
           <div className="livesignal-capabilities">
             <p style={{ marginBottom: '20px'}}>Key capabilities</p>
-            <IconListItem icon="/public/img/location.svg" text="automatic location detection during emergency calls" />
-            <IconListItem icon="/public/img/emergency.svg" text="faster emergency response" />
-            <IconListItem icon="/public/img/critical-error.svg" text="reduced risk of critical errors" />
+            <IconListItem icon="/img/location.svg" text="automatic location detection during emergency calls" />
+            <IconListItem icon="/img/emergency.svg" text="faster emergency response" />
+            <IconListItem icon="/img/critical-error.svg" text="reduced risk of critical errors" />
 
             <div className="livesignal-nums">
               <div className="livesignal-num-item">

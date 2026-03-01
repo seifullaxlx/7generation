@@ -3,7 +3,7 @@
   min-height: 625px;
   display: flex;
   align-items: flex-end;
-  background: url("public/img/contacts.jpg");
+  background: url("/img/contacts.jpg");
   background-size: cover;
 }
 

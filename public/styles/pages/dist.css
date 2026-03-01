@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("public/img/dist-bg.jpg");
+  background: url("/img/dist-bg.jpg");
   background-size: cover;
 }
 
@@ -120,7 +120,7 @@
 
 /* Verticals card */
 .dist-verticals-card {
-  background: url("public/img/dist-layers-img.jpg");
+  background: url("/img/dist-layers-img.jpg");
   color: #fafafa;
   background-size: cover;
   border-radius: 20px;

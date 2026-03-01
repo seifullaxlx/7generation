@@ -3,7 +3,7 @@
   min-height: 625px;
   display: flex;
   align-items: flex-end;
-  background: url("public/img/solution.jpg");
+  background: url("/img/solution.jpg");
   background-size: cover;
 }
 
@@ -112,7 +112,7 @@
 
 .sol-frameworks {
   background-size: cover;
-  background: url("public/img/sol-fw-footer.jpg");
+  background: url("/img/sol-fw-footer.jpg");
 }
 
 .sol-frameworks__grid {

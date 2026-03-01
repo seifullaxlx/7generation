@@ -36,7 +36,7 @@ export default function Dist() {
           </div>
         </div>
 
-        <img className="dist-img-round" src="/public/img/dist-img.png" alt=""/>
+        <img className="dist-img-round" src="/img/dist-img.png" alt=""/>
       </section>
 
       {/* DI&ST Layers */}

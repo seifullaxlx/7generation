@@ -2,26 +2,26 @@ import '../../public/styles/pages/careers.css'
 import IconListItem from "../components/IconListItem.jsx";
 
 const whyItems = [
-  { icon: '/public/img/infra.svg', text: 'Infrastructure-scale data' },
-  { icon: '/public/img/prod.svg', text: 'Real production environments' },
-  { icon: '/public/img/home-icons/blockchain.svg', text: 'Problems that cannot be solved with generic tools' },
+  { icon: '/img/infra.svg', text: 'Infrastructure-scale data' },
+  { icon: '/img/prod.svg', text: 'Real production environments' },
+  { icon: '/img/home-icons/blockchain.svg', text: 'Problems that cannot be solved with generic tools' },
 ]
 
 const valuesItems = [
-  { icon: '/public/img/energy.svg', text: 'We build teams of energetic, talented, and decisive people' },
-  { icon: '/public/img/people.svg', text: 'We prioritise people when building the organisation' },
-  { icon: '/public/img/impact.svg', text: 'We choose projects that create meaningful impact' },
+  { icon: '/img/energy.svg', text: 'We build teams of energetic, talented, and decisive people' },
+  { icon: '/img/people.svg', text: 'We prioritise people when building the organisation' },
+  { icon: '/img/impact.svg', text: 'We choose projects that create meaningful impact' },
 ]
 
 const insideItems = [
-  { icon: '/public/img/analytics.svg', text: 'Financial support in key life moments' },
-  { icon: '/public/img/meal.svg', text: 'Daily office breakfasts' },
-  { icon: '/public/img/translate.svg', text: 'Language courses during work hours' },
-  { icon: '/public/img/box.svg', text: 'Welcome Box for new team members' },
-  { icon: '/public/img/health.svg', text: 'Fitness and health compensation' },
-  { icon: '/public/img/international.svg', text: 'Participation in international conferences' },
-  { icon: '/public/img/coin.svg', text: 'Dreamcoin — internal reward currency' },
-  { icon: '/public/img/sports.svg', text: 'Sports and corporate events' },
+  { icon: '/img/analytics.svg', text: 'Financial support in key life moments' },
+  { icon: '/img/meal.svg', text: 'Daily office breakfasts' },
+  { icon: '/img/translate.svg', text: 'Language courses during work hours' },
+  { icon: '/img/box.svg', text: 'Welcome Box for new team members' },
+  { icon: '/img/health.svg', text: 'Fitness and health compensation' },
+  { icon: '/img/international.svg', text: 'Participation in international conferences' },
+  { icon: '/img/coin.svg', text: 'Dreamcoin — internal reward currency' },
+  { icon: '/img/sports.svg', text: 'Sports and corporate events' },
 ]
 
 export default function Careers() {
