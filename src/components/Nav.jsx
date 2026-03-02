@@ -2,26 +2,39 @@ import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import '../../public/styles/components/nav.css'
 
-const links = [
+const navItems = [
   { to: '/', label: 'Home' },
-  { to: '/dist', label: 'DIST' },
+  {
+    label: 'Products',
+    children: [
+      { to: '/dist', label: 'DIST' },
+      { to: '/analytics', label: 'Analytics' },
+      { to: '/engineering-culture', label: 'Video Intelligence' },
+    ],
+  },
   { to: '/solutions', label: 'Solutions' },
-  { to: '/careers', label: 'Why 7G' },
-  { to: '/analytics', label: 'Analytics' },
-  { to: '/esg', label: 'ESG' },
-  { to: '/company', label: 'Company' },
+  {
+    label: 'Company',
+    children: [
+      { to: '/company', label: 'About' },
+      { to: '/team', label: 'Team' },
+      { to: '/careers', label: 'Why 7G' },
+      { to: '/esg', label: 'ESG' },
+    ],
+  },
   { to: '/contact', label: 'Contact' },
-  { to: '/engineering-culture', label: 'Video Intelligence' },
 ]
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState(null)
   const [theme, setTheme] = useState('dark')
   const location = useLocation()
 
   // Close menu on route change
   useState(() => {
     setOpen(false)
+    setOpenDropdown(null)
   }, [location.pathname])
 
   // Detect section background — update nav theme
@@ -47,6 +60,14 @@ export default function Nav() {
     sections.forEach(s => observer.observe(s))
     return () => observer.disconnect()
   }, [location.pathname])
+
+  const toggleDropdown = (label) =>
+    setOpenDropdown(prev => (prev === label ? null : label))
+
+  const closeAll = () => {
+    setOpen(false)
+    setOpenDropdown(null)
+  }
 
   return (
     <>
@@ -107,20 +128,63 @@ export default function Nav() {
 
       {/* Center — links */}
       <ul className="nav__links">
-        {links.map(({ to, label }) => (
-          <li key={to}>
-            <NavLink
-              to={to}
-              end={to === '/'}
-              className={({ isActive }) =>
-                `nav__link${isActive ? ' active' : ''}`
-              }
-              onClick={() => setOpen(false)}
-            >
-              {label}
-            </NavLink>
-          </li>
-        ))}
+        {navItems.map((item) => {
+          if (item.children) {
+            const isOpen = openDropdown === item.label
+            return (
+              <li
+                key={item.label}
+                className={`nav__dropdown${isOpen ? ' nav__dropdown--open' : ''}`}
+                onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpenDropdown(item.label) }}
+                onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpenDropdown(null) }}
+              >
+                <button
+                  className="nav__link nav__dropdown-toggle"
+                  onClick={() => {
+                    // On touch devices (no native hover), click toggles open/close.
+                    // On mouse devices hover already handles it — skip to avoid double-fire.
+                    if (!window.matchMedia('(hover: hover)').matches) {
+                      toggleDropdown(item.label)
+                    }
+                  }}
+                  aria-expanded={isOpen}
+                >
+                  {item.label}
+                </button>
+                <ul className="nav__dropdown-menu">
+                  {item.children.map(({ to, label }) => (
+                    <li key={to}>
+                      <NavLink
+                        to={to}
+                        className={({ isActive }) =>
+                          `nav__link nav__dropdown-item${isActive ? ' active' : ''}`
+                        }
+                        onClick={closeAll}
+                      >
+                        {label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            )
+          }
+
+          return (
+            <li key={item.to}>
+              <NavLink
+                to={item.to}
+                end={item.to === '/'}
+                className={({ isActive }) =>
+                  `nav__link${isActive ? ' active' : ''}`
+                }
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          )
+        })}
       </ul>
 
       {/* Right — login */}
