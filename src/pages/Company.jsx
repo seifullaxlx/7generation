@@ -1,4 +1,5 @@
 import '../../public/styles/pages/company.css'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const capabilities = [
   {
@@ -107,6 +108,8 @@ export default function Company() {
           ))}
         </div>
       </section>
+
+      <ContactsSection />
     </>
   )
 }

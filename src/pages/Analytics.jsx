@@ -1,4 +1,5 @@
 import '../../public/styles/pages/analytics.css'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const netVisionCapabilities = [
   { title: 'Infrastructure Big Data Analytics', desc: 'Real-time, large-scale analysis of network, signalling, and telecom metadata.' },
@@ -174,6 +175,8 @@ export default function Analytics() {
             </div>
           </div>
         </section>
+
+      <ContactsSection />
     </>
   )
 }

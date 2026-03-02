@@ -1,5 +1,6 @@
 import '../../public/styles/pages/engineering-culture.css'
 import IconListItem from "../components/IconListItem.jsx";
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const capCards = [
   {
@@ -161,6 +162,8 @@ export default function EngineeringCulture() {
         </div>
       </section>
 
+
+      <ContactsSection />
     </>
   )
 }

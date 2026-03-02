@@ -3,6 +3,7 @@ import SolRowCard from '../components/SolRowCard'
 import SolItemList from '../components/SolItemList'
 import SolFw from '../components/SolFw'
 import SolFwCard from '../components/SolFwCard'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const verticals = [
   {
@@ -143,6 +144,8 @@ export default function Solutions() {
           />
         </div>
       </section>
+
+      <ContactsSection />
     </>
   )
 }

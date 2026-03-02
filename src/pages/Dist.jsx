@@ -1,4 +1,5 @@
 import '../../public/styles/pages/dist.css'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 export default function Dist() {
   const layers = [
@@ -69,6 +70,8 @@ export default function Dist() {
           </div>
         </div>
       </section>
+
+      <ContactsSection />
     </>
   )
 }

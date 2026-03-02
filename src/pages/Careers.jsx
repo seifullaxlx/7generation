@@ -1,5 +1,6 @@
 import '../../public/styles/pages/careers.css'
 import IconListItem from "../components/IconListItem.jsx";
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const whyItems = [
   { icon: '/img/infra.svg', text: 'Infrastructure-scale data' },
@@ -100,6 +101,8 @@ export default function Careers() {
           ))}
         </div>
       </section>
+
+      <ContactsSection />
     </>
   )
 }

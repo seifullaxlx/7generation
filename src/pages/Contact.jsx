@@ -1,5 +1,6 @@
 import '../../public/styles/pages/contact.css'
 import ContactCatCard from '../components/ContactCatCard'
+import ContactsSection from "../components/ContactsSection.jsx";
 
 const categories = [
   {
@@ -51,6 +52,8 @@ export default function Contact() {
           ))}
         </div>
       </section>
+
+      <ContactsSection />
     </>
   )
 }
