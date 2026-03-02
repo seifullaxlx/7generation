@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: stretch;
   gap: 8px;
 }
 
@@ -70,7 +71,6 @@
 }
 
 .second-section-body p {
-  margin-bottom: 24px !important;
   margin-left: 25px;
   font-size: 16px;
 }
@@ -102,8 +102,8 @@
 }
 
 .second-section-body img {
-  width: 31px;
-  height: 31px;
+  min-width: 31px;
+  min-height: 31px;
 }
 
 .second-section-body p {
@@ -339,6 +339,7 @@
 
   .second-section-body {
     grid-row: span 2;
+    align-items: stretch;
   }
 
   .second-section-desc {
@@ -346,6 +347,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: 40px;
   }
 
   .third-section-info {

@@ -11,7 +11,7 @@ const verticals = [
     bio: 'Operational context \n' +
       'Telecom operators sit at the centre of digital ecosystems, where network behaviour directly affects financial services, platforms, and public systems.  \n' +
       'They face simultaneous pressure to reduce fraud, improve service quality, manage growing volumes of commercial and advertising traffic, and unlock new value from infrastructure data.',
-    backgroundImage: 'public/img/sol-row-1.jpg',
+    backgroundImage: '/img/sol-row-1.jpg',
     streams: [
       'Risk & Anti-Fraud Intelligence',
       'Netalytix — Data & Predictive Analytics',
@@ -32,7 +32,7 @@ const verticals = [
     title: 'Public-Sector Institutions',
     bio: 'Operational context \n' +
       'Public digital services increasingly depend on commercial infrastructure, while accountability and systemic risk remain public responsibilities.',
-    backgroundImage: 'public/img/sol-row-2.jpg',
+    backgroundImage: '/img/sol-row-2.jpg',
     streams: [
       'Early identification of systemic digital risk',
       'Improved oversight across fragmented ecosystems',
@@ -52,7 +52,7 @@ const verticals = [
     title: 'Banks & Payment Service Providers',
     bio: 'Operational context \n' +
       'Financial fraud increasingly originates outside the financial perimeter — within telecom networks and digital platforms.',
-    backgroundImage: 'public/img/sol-row-3.jpg',
+    backgroundImage: '/img/sol-row-3.jpg',
     streams: [
       'Infrastructure-level Anti-Fraud Intelligence',
       'Behavioural & Identity Analytics',
@@ -69,7 +69,7 @@ const verticals = [
     title: 'Marketplaces & Platforms',
     bio: 'Operational context \n' +
       'Coordinated abuse and synthetic activity rarely appear as isolated accounts.',
-    backgroundImage: 'public/img/sol-row-4.jpg',
+    backgroundImage: '/img/sol-row-4.jpg',
     streams: [
       'Behavioural & Identity Intelligence',
       'Risk Modelling',
@@ -86,7 +86,7 @@ const verticals = [
     title: 'National & Critical Infrastructure',
     bio: 'Operational context \n' +
       'Infrastructure failures propagate rapidly across sectors.',
-    backgroundImage: 'public/img/sol-row-5.jpg',
+    backgroundImage: '/img/sol-row-5.jpg',
     streams: [
       'Infrastructure Resilience Intelligence',
       'Traffic & Behavioural Analytics',

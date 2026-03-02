@@ -75,7 +75,7 @@ export default function Home() {
             <p style={{ marginBottom: "24px"}}>7Generation works with infrastructure-level data, including:</p>
             <ul>
               <IconListItem icon="/img/home-icons/network.png" text="Network traffic and signalling flows" />
-              <IconListItem icon="/img/home-icons/telecom.png" text="Telecom and service metadata" />
+              <IconListItem icon="/img/home-icons/telecom.svg" text="Telecom and service metadata" />
               <IconListItem icon="/img/home-icons/behavioural.png" text="Behavioural and transactional patterns" />
             </ul>
             <p style={{ marginTop: "37px" }}>to build a ground-truth view of how digital systems actually operate, rather than how they are represented at the service or application layer.</p>

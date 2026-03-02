@@ -16,7 +16,7 @@
 }
 
 .contact-hero__heading {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 400;
   color: #fafafa;
 }
@@ -86,6 +86,9 @@
 }
 
 @media (min-width: 768px) {
+  .contact-hero__heading {
+    font-size: 64px;
+  }
   .contact-hero__inner {
     grid-template-columns: 1fr 1fr;
   }

@@ -4,7 +4,7 @@ export default function IconListItem({ icon, text, alt = '' }) {
       <div className="li-icon">
         <img src={icon} alt={alt} />
       </div>
-      <p>{text}</p>
+      <p style={{ marginBottom: 0 }}>{text}</p>
     </li>
   )
 }

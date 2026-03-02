@@ -8,6 +8,10 @@
   background-size: cover;
 }
 
+.cap-hero__left {
+  margin-top: 100px;
+}
+
 .cap-hero .page-grid {
   align-items: end;
   gap: 32px;
@@ -416,9 +420,9 @@
   color: #020206;
 }
 
-.streams-card:nth-child(1) { background: url("/img/list-1.jpg"); }
-.streams-card:nth-child(2) { background: url("/img/list-2.jpg"); }
-.streams-card:nth-child(3) { background: url("/img/list-3.jpg"); }
+.streams-card:nth-child(1) { background: url("/img/list-1.jpg"); background-size: cover }
+.streams-card:nth-child(2) { background: url("/img/list-2.jpg"); background-size: cover }
+.streams-card:nth-child(3) { background: url("/img/list-3.jpg"); background-size: cover }
 
 @media (max-width: 767px) {
   /* Hero */
