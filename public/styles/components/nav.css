@@ -301,3 +301,23 @@
     text-decoration: none !important;
   }
 }
+
+@media (min-width: 1260px) {
+  .nav__logo img {
+    height: 56px;
+  }
+
+  .nav__link {
+    font-size: 20px;
+  }
+
+  .nav__dropdown-toggle {
+    font-size: 20px;
+  }
+
+  .nav__login {
+    font-size: 25px;
+    padding: 27px 36px 28px 38px;
+    border-radius: 28px;
+  }
+}

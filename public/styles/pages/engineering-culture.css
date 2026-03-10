@@ -431,3 +431,38 @@
     min-height: 383px;
   }
 }
+
+@media (min-width: 1260px) {
+  .ec-hero__right p { font-size: 20px; }
+  .ec-rd__left li p { font-size: 22px; }
+  .li-icon { padding: 28px; margin-right: 35px; }
+  .ec-rd__p { font-size: 22px; }
+  .ec-rd__card { padding: 77px 50px; }
+  .ec-rd__card p { font-size: 22px; }
+  .ec-rd__card span { font-size: 20px; padding: 46px; }
+  .ec-label { font-size: 17px; margin-bottom: 17px; }
+  .ec-rd__inner { margin-bottom: 56px; }
+  .ec-rd__list li { font-size: 20px; }
+  .ec-rd__tagline { font-size: 25px; padding-top: 45px; }
+  .ec-team-section__sub { font-size: 20px; margin-bottom: 34px; }
+  .ec-team-section__list li { font-size: 20px; }
+  .ec-team-section__cols { gap: 34px; }
+  .ec-rds__label { font-size: 22px; margin-bottom: 56px; }
+  .ec-rds-detail__name { font-size: 50px; margin-bottom: 28px; }
+  .ec-rds-detail__sub { font-size: 22px; }
+  .ec-rds-detail__grid { gap: 17px; }
+  .ec-rds-detail__card { padding: 22px; gap: 17px; }
+  .ec-rds-detail__card span { font-size: 22px; }
+  .ec-rds-detail__card img { width: 77px; height: 77px; }
+  .ec-rds-detail__card--outcome { padding-left: 42px; }
+  .ec-rds-detail__card--outcome img { width: 39px; height: 39px; }
+  .ec-rds-detail__right p { font-size: 22px; }
+  .ec-capture__sub { font-size: 22px; margin-bottom: 56px; }
+  .ec-capabilities span { font-size: 22px; }
+  .ec-capabilities__heading { margin-top: 42px; margin-bottom: 45px; }
+  .ec-capabilities__grid { gap: 17px; }
+  .ec-cap-card { padding: 39px; min-height: 536px; }
+  .ec-cap-card span { font-size: 22px; }
+  .ec-cap-card h3 { font-size: 45px; margin-bottom: 28px; }
+  .ec-cap-card p { font-size: 22px; }
+}

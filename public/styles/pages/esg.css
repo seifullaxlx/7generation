@@ -393,3 +393,39 @@
   }
 }
 
+@media (min-width: 1260px) {
+  /* Hero block overrides */
+  .block__heading { font-size: 70px; }
+  .block__body { font-size: 21px; }
+
+  /* Second section */
+  .second-section-title span { font-size: 22px; }
+  .second-section-title h1 { font-size: 50px; }
+  .second-section-title p,
+  .second-section-desc p,
+  .second-section-body p { font-size: 22px; }
+  .second-section-body li { padding: 8px; }
+  .li-icon { padding: 28px; margin-right: 35px; }
+
+  /* Third section */
+  .third-section-list li { padding: 42px; }
+  .third-section-list li span { font-size: 21px; }
+  .third-section-list li h3 { font-size: 67px; margin-top: 112px; }
+  .third-section-list li p { font-size: 22px; }
+  .third-section-info span { font-size: 22px; }
+  .third-section-info h1 { font-size: 50px; margin-top: 42px; }
+  .third-section-info button { font-size: 20px; padding: 28px 67px; margin-top: 52px; }
+
+  /* LiveSignal */
+  .livesignal-card { padding: 56px; }
+  .livesignal-card span { font-size: 22px; margin-bottom: 35px; }
+  .livesignal-card h2 { font-size: 50px; margin-bottom: 28px; }
+  .livesignal-card p { font-size: 22px; margin-bottom: 34px; }
+  .livesignal-card button { font-size: 20px; padding: 28px 67px; }
+  .livesignal-card-list { padding: 42px; }
+  .livesignal-capabilities p { font-size: 22px; }
+  .livesignal-nums { margin-top: 70px; gap: 84px; }
+  .livesignal-num-item h3 { font-size: 67px; margin-bottom: 28px; }
+  .livesignal-num-item p { font-size: 22px; }
+}
+

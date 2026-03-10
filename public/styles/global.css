@@ -80,6 +80,39 @@ p {
   }
 }
 
+@media (min-width: 1260px) {
+  :root {
+    --spacing-sm: 22px;
+    --spacing-md: 45px;
+    --spacing-lg: 90px;
+  }
+
+  .page {
+    padding: 45px 60px;
+  }
+
+  .block__label {
+    font-size: 1.05rem;
+  }
+
+  .block__heading {
+    font-size: clamp(1.75rem, 5vw, 4.9rem);
+  }
+
+  .block__heading__p {
+    font-size: 21px;
+  }
+
+  .block__body {
+    font-size: clamp(0.9rem, 2vw, 1.575rem);
+  }
+
+  .block__list-item {
+    font-size: 1.4rem;
+    padding: 17px 0;
+  }
+}
+
 /* ─── Block ──────────────────────────────────────────── */
 .block {
   display: flex;

@@ -97,3 +97,13 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (min-width: 1260px) {
+  .contact-hero__heading { font-size: 90px; }
+  .contact-hero__right { padding: 76px 64px; }
+  .contact-hero__right p { font-size: 28px; }
+  .contact-cat-card { padding: 45px; gap: 17px; }
+  .contact-cat-card__title { font-size: 25px; }
+  .contact-cat-card__desc { font-size: 18px; }
+  .contact-cat-card__btn { font-size: 22px; }
+}

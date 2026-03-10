@@ -334,3 +334,27 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1260px) {
+  .car-hero__sub { font-size: 20px; }
+  .car-hero__right p { font-size: 20px; }
+  .car-label { font-size: 17px; margin-bottom: 17px; }
+  .car-why__left span { font-size: 22px; margin-bottom: 39px; }
+  .car-why__left p { font-size: 22px; margin-bottom: 48px; }
+  .car-why__list li { padding: 8px; }
+  .car-why__list .li-icon,
+  .car-why__icon { padding: 28px; }
+  .car-why__list li p { margin-left: 28px; }
+  .car-dna-card { padding: 28px; min-height: 392px; }
+  .car-dna-card span { font-size: 22px; }
+  .car-dna-card p { font-size: 22px; }
+  .car-dna-card button { font-size: 20px; padding: 29px; }
+  .car-values span { font-size: 22px; margin-bottom: 39px; }
+  .car-values__item { padding: 8px; }
+  .car-values-icon { padding: 28px; margin-right: 21px; }
+  .car-values__item p { font-size: 22px; }
+  .car-inside__grid { gap: 17px; }
+  .car-inside-card { padding: 28px; min-height: 280px; }
+  .car-inside-card p { font-size: 28px; }
+  .car-inside-card-icon { padding: 25px; width: 98px; margin-bottom: 126px; }
+}

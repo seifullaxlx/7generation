@@ -161,3 +161,20 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (min-width: 1260px) {
+  .why-hero__eyebrow { font-size: 17px; margin-bottom: 17px; }
+  .why-hero__right p { font-size: 20px; margin-bottom: 28px; }
+  .why-hero__list li { font-size: 18px; }
+  .why-section-label { font-size: 17px; margin-bottom: 17px; }
+  .why-section-heading { margin-bottom: 45px; }
+  .why-domains__grid { gap: 17px; }
+  .why-domain-card { padding: 39px; gap: 14px; }
+  .why-domain-card h3 { font-size: 22px; }
+  .why-domain-card p { font-size: 18px; }
+  .why-matters__grid { gap: 17px; }
+  .why-matter-card { padding: 39px; gap: 11px; }
+  .why-matter-card__num { font-size: 17px; }
+  .why-matter-card h3 { font-size: 22px; }
+  .why-matter-card p { font-size: 18px; }
+}

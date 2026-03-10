@@ -498,3 +498,59 @@
     font-size: 24px;
   }
 }
+
+@media (min-width: 1260px) {
+  /* Hero */
+  .cap-hero__left p { font-size: 22px; margin-bottom: 42px; }
+  .cap-hero__left h1 { font-size: 70px; }
+  .cap-hero__right { padding: 49px; }
+  .cap-hero__right p { font-size: 28px; margin-bottom: 28px; }
+  .cap-tag { font-size: 20px; padding: 28px; }
+  .cap-hero__num { font-size: 112px; }
+
+  /* Sections */
+  .cap-label { font-size: 22px; margin-bottom: 34px; }
+  .cap-section__right-label { font-size: 22px; margin-bottom: 35px; }
+  .cap-section__left p { font-size: 22px; }
+  .cap-check-list li { padding: 42px 49px; }
+  .cap-check-list span { font-size: 25px; margin-right: 32px; }
+  .cap-check-list p { font-size: 22px; }
+  .cap-note { font-size: 22px; margin-top: 52px; }
+
+  /* NetVision */
+  .net-vision__inner { margin: 140px 0; }
+  .net-vision__left span { font-size: 22px; }
+  .net-vision__left h2 { font-size: 50px; margin-bottom: 56px; margin-top: 73px; }
+  .net-vision__left p { font-size: 22px; }
+  .net-vision__right h3 { font-size: 45px; margin-bottom: 42px; }
+  .cap-kv-item { padding: 56px 49px; }
+  .cap-kv-item h4 { font-size: 28px; margin-bottom: 28px; }
+  .cap-kv-item p { font-size: 20px; }
+
+  /* Predictive Analytics */
+  .pred-analytics-inner { margin: 140px 84px; }
+  .pred-analytics-title span { font-size: 22px; }
+  .pred-analytics-title h2 { font-size: 50px; margin-bottom: 49px; }
+  .pred-analytics-title p { font-size: 22px; }
+  .pred-analytics-content li { padding: 49px 35px; }
+  .pred-analytics-content li span { font-size: 22px; margin-right: 42px; }
+  .pred-analytics-content li:last-child span { font-size: 45px; }
+  .pred-analytics-content li p { font-size: 22px; }
+
+  /* Regulatory */
+  .regulatory__left span { font-size: 22px; margin-bottom: 49px; }
+  .regulatory__left h2 { font-size: 50px; }
+  .regulatory__left p { font-size: 22px; }
+  .regulatory__right p { font-size: 22px; margin-bottom: 35px; }
+  .regulatory-item { padding: 48px 42px; }
+  .regulatory-item span { font-size: 25px; margin-right: 32px; }
+  .regulatory-item p { font-size: 22px; }
+
+  /* Streams */
+  .streams { padding: 140px 17px 118px; }
+  .streams-inner span { font-size: 22px; margin-bottom: 46px; }
+  .streams-inner h3 { font-size: 50px; margin-bottom: 56px; }
+  .streams-card { padding: 50px 42px; height: 332px; }
+  .streams-card h4 { font-size: 34px; margin-bottom: 28px; }
+  .streams-card p { font-size: 22px; }
+}

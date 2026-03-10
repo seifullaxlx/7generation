@@ -225,3 +225,28 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1260px) {
+  /* Row cards */
+  .sol-row-card { padding: 49px 64px; height: 630px; }
+  .sol-row-card span { font-size: 22px; margin-bottom: 42px; }
+  .sol-row-card h3 { font-size: 50px; }
+  .sol-row-card p { font-size: 22px; }
+
+  /* Lists */
+  .sol-list-streams,
+  .sol-list-outcomes { padding: 56px; }
+  .sol-list-streams p,
+  .sol-list-outcomes p { font-size: 22px; margin-bottom: 28px; }
+  .sol-list-streams li,
+  .sol-list-outcomes li { font-size: 22px; }
+
+  /* Frameworks */
+  .sol-fw span { font-size: 22px; margin-bottom: 42px; }
+  .sol-fw h3 { font-size: 45px; }
+  .sol-fw p { font-size: 22px; }
+  .sol-fw-card { height: 536px; padding: 71px 31px 31px; }
+  .sol-fw-card h3 { font-size: 45px; margin-bottom: 28px; }
+  .sol-fw-card p { font-size: 22px; }
+  .sol-fw-card button { font-size: 20px; padding: 21px 192px; }
+}

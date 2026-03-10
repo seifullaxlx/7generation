@@ -442,3 +442,54 @@
         min-height: 260px;
     }
 }
+
+/* ── XL 1260px+ ──────────────────────────────────────── */
+@media (min-width: 1260px) {
+  /* Core domains */
+  .home-domains__title span { font-size: 22px; margin-bottom: 56px; }
+  .home-domains__title h2 { font-size: 50px; }
+  .home-domain-card { height: 658px; padding: 42px; }
+  .home-domain-card span { font-size: 22px; }
+  .home-domain-card h3 { font-size: 28px; margin-bottom: 31px; }
+  .home-domain-card p { font-size: 20px; }
+
+  /* Why This Matters */
+  .home-why-matters { margin-top: 126px; margin-bottom: 91px; }
+  .home-why-matters__left span { font-size: 22px; margin-bottom: 49px; }
+  .home-why-matters__left h2 { font-size: 50px; }
+  .home-why-matters__left p { font-size: 22px; }
+  .home-why-matters__right p { font-size: 22px; margin-bottom: 35px; }
+  .home-why-matters__right ul li { padding: 49px 42px; }
+  .home-why-matters__right ul li span { font-size: 25px; margin-right: 42px; }
+  .home-why-matters__right ul li p { font-size: 22px; }
+
+  /* Why 7Generation */
+  .home-why7g__header { margin-bottom: 74px; }
+  .home-why7g__header span { font-size: 22px; margin-right: 193px; }
+  .home-why7g__header h2 { font-size: 50px; }
+  .home-why7g__list { margin-bottom: 92px; }
+  .home-why7g__item { padding: 21px 112px 21px 21px; }
+  .home-why7g__item h3 { font-size: 34px; width: 563px; }
+  .home-why7g__item p { font-size: 22px; width: 490px; }
+  .home-why7g__icon { padding: 28px; }
+  .home-why7g__icon img { height: 43px; }
+
+  /* Cards */
+  .home-card { height: 679px; padding: 42px 59px; }
+  .home-card span { font-size: 22px; }
+  .home-card h3 { font-size: 34px; margin-bottom: 28px; }
+  .home-card p { font-size: 20px; }
+  .home-card__footer { padding: 42px 55px; }
+  .home-card__footer h3 { font-size: 34px; }
+  .home-card__footer span { font-size: 22px; }
+  .home-card__footer p { font-size: 20px; }
+
+  /* Contacts */
+  .footer-main { gap: 84px; }
+  .contacts-tag { font-size: 22px; }
+  .contacts-heading { font-size: 50px; margin-bottom: 59px; }
+  .contacts-label { font-size: 22px; margin-bottom: 28px; }
+  .contacts-value { font-size: 22px; }
+  .contacts-nav li a { font-size: 20px; }
+  .contacts-map { width: 700px; }
+}

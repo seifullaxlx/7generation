@@ -154,3 +154,18 @@
     align-items: stretch;
   }
 }
+
+@media (min-width: 1260px) {
+  .dist-hero__right { padding: 77px 59px 67px 57px; }
+  .dist-hero__right p { font-size: 22px; }
+  .dist-label { font-size: 22px; margin-bottom: 22px; }
+  .dist-what__body { font-size: 20px; margin-bottom: 22px; }
+  .dist-layer-item { padding: 49px 48px 49px 38px; font-size: 22px; }
+  .dist-layer-item__num { font-size: 22px; margin-right: 42px; }
+  .dist-layer-item__name { font-size: 22px; }
+  .dist-layer-item__desc { font-size: 22px; }
+  .dist-verticals-card { padding: 56px; min-height: 630px; }
+  .dist-verticals-card span { font-size: 22px; margin-bottom: 42px; }
+  .dist-verticals-card h3 { font-size: 50px; }
+  .dist-verticals-card p { font-size: 22px; }
+}
