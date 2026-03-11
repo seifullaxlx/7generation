@@ -106,7 +106,7 @@ export default function Solutions() {
     <>
       {/* Hero */}
       <section className="page sol-hero section--dark" data-nav-theme="dark">
-        <h1 className="sol-hero__heading">Solutions —<br />By Vertical</h1>
+        <h1 className="sol-hero__heading">Solutions — By Vertical</h1>
       </section>
 
       {/* Verticals grid */}

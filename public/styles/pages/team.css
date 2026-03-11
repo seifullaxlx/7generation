@@ -1,6 +1,6 @@
 /* Hero */
 .team-hero {
-  min-height: 625px;
+  min-height: 800px;
   display: flex;
   align-items: flex-end;
   background: url("/img/team.jpg");
@@ -29,7 +29,6 @@
 
 
 .team-card__body {
-  padding: 28px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -86,6 +85,7 @@
 
   .team-card {
     flex-direction: column;
+    padding: 15px;
   }
 }
 

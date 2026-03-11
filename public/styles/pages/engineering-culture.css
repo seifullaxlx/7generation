@@ -1,6 +1,6 @@
 /* Hero */
 .ec-hero {
-  min-height: 480px;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -306,6 +306,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .ec-capture__name {
@@ -379,6 +381,7 @@
   font-size: 16px;
   font-weight: 200;
   color: rgba(250, 250, 250, 0.3);
+  margin-bottom: 24px;
 }
 
 .ec-cap-card h3 {
@@ -420,6 +423,10 @@
 
   .ec-rds__heading br {
     display: inline;
+  }
+  .ec-rd__left img {
+    width: 31px !important;
+    height: 31px;
   }
 
   .ec-capabilities__intro {

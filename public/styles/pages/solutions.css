@@ -1,10 +1,11 @@
 /* Hero */
 .sol-hero {
-  min-height: 625px;
+  min-height: 900px;
   display: flex;
   align-items: flex-end;
   background: url("/img/solution.jpg");
   background-size: cover;
+  padding-bottom: 100px;
 }
 
 .sol-hero__heading {
@@ -182,7 +183,8 @@
     background-color: #020206;
   }
   .sol-hero {
-    min-height: 400px;
+    min-height: 700px;
+    padding-bottom: 40px;
   }
 
   /* Each sol-row stacks to 1 column, even-row reversal cancelled */

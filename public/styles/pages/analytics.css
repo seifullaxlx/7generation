@@ -80,12 +80,14 @@
 .cap-section__left {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .cap-section__left p {
   font-size: 16px;
   font-weight: 200;
   margin-top: auto;
+  width: 70%;
 }
 
 .cap-label--blue {
@@ -110,7 +112,7 @@
 }
 
 .cap-section__heading {
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: 48px;
   font-weight: 400;
   color: #020206;
   margin-bottom: 16px;
@@ -145,7 +147,7 @@
 
 .cap-check-list span {
   font-size: 18px;
-  color: rgba(2,2,6,0.24);
+  color: #2786EF;
   margin-right: 23px;
 }
 
@@ -170,6 +172,7 @@
 .net-vision__left {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .net-vision__left span {
@@ -186,9 +189,10 @@
 }
 
 .net-vision__left p {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 200;
   color: #fafafa;
+  width: 70%;
 }
 
 .net-vision__left p:last-child {
@@ -272,7 +276,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgba(217, 217, 217, 0.3);
+  background: rgba(217, 217, 217, 0.17);
   padding: 35px 25px;
   border-radius: 20px;
 }
@@ -304,6 +308,9 @@
 
 .regulatory {
   background: url("/img/regulatory.jpg");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .regulatory__inner {
@@ -361,12 +368,13 @@
   font-size: 18px;
   color: rgba(250, 250, 250, 0.24);
   margin-right: 23px;
+  width: 70px;
 }
 
 .regulatory-item p {
   font-size: 16px;
   font-weight: 200;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .streams {
@@ -469,6 +477,7 @@
 
   .pred-analytics-title h2 {
     font-size: 24px;
+    margin-top: 24px;
   }
 
   .pred-analytics-content ul {

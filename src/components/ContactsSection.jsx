@@ -7,7 +7,7 @@ export default function ContactsSection() {
           <h2 className="contacts-heading">Contacts</h2>
           <div className="footer-main">
             <div>
-              <p className="contacts-label">Number /</p>
+              <p className="contacts-label">/ Number /</p>
               <p className="contacts-value">+7 (777) 777-77-77</p>
             </div>
             <div>
@@ -15,7 +15,7 @@ export default function ContactsSection() {
               <a href="mailto:7gen@gmail.com" className="contacts-value">7gen@gmail.com</a>
             </div>
             <div className="contacts-nav">
-              <p className="contacts-label">Navigation /</p>
+              <p className="contacts-label">/ Navigation /</p>
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/analytics">Analytics</a></li>
@@ -27,7 +27,7 @@ export default function ContactsSection() {
               </ul>
             </div>
             <div>
-              <p className="contacts-label">Address /</p>
+              <p className="contacts-label">/ Address /</p>
               <p className="contacts-value">г. Астана, проспект <br /> Бауыржан Момышулы 2/1</p>
             </div>
           </div>

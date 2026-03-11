@@ -116,19 +116,19 @@ export default function EngineeringCulture() {
         <div className="ec-rds-detail__grid">
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/img/home-icons/blockchain.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/home-icons/wifi.svg" alt="" />
             </div>
             <span>Network packets</span>
           </div>
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/img/network.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/data.svg" alt="" />
             </div>
             <span>Data extraction mechanisms</span>
           </div>
           <div className="ec-rds-detail__card ec-capture__card">
             <div style={{ background: '#fff', padding: '20px', borderRadius: '20px'}}>
-              <img style={{ width: '31px', height: '31px'}} src="/img/data.svg" alt="" />
+              <img style={{ width: '31px', height: '31px'}} src="/img/home-icons/blockchain.svg" alt="" />
             </div>
             <span>Protocols</span>
           </div>

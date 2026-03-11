@@ -1,6 +1,6 @@
 /* Hero */
 .company-hero {
-  min-height: 480px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -116,6 +116,7 @@
   font-weight: 400;
   color: #fafafa;
   margin-top: 25px;
+  margin-bottom: 24px;
 }
 
 .company-problem-card {
@@ -186,11 +187,12 @@
 
 @media (min-width: 1135px) {
   .company-hero {
-    min-height: 560px;
+    min-height: 800px;
   }
 }
 
 @media (min-width: 1260px) {
+  .company-hero { min-height: 1000px; }
   .company-hero__heading { font-size: 70px; margin-top: 280px; margin-bottom: 35px; }
   .company-hero__label { font-size: 20px; }
   .company-hero__info { padding: 59px; }

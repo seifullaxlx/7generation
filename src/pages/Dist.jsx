@@ -17,6 +17,7 @@ export default function Dist() {
         <div className="page-grid">
           <div className="dist-hero__left">
             <h1 className="dist-hero__heading">From Security to<br />Digital Integrity</h1>
+            <p>As digital markets mature, the focus moves beyond protecting isolated components toward ensuring that digital processes behave correctly at scale.</p>
           </div>
           <div className="dist-hero__right">
             <p>Digital Integrity & Safety Tech (DI&ST) reflects the transition — from cyber-defence to ecosystem governance through data and analytics. DI&ST treats security not as a set of controls, but as the outcome of observable and predictable system behaviour.</p>

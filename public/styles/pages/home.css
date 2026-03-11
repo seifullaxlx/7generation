@@ -57,6 +57,8 @@
 .home-domain-card span {
     font-size: 16px;
     color: rgba(250, 250, 250, 0.3);
+    margin-bottom: 14px;
+    font-weight: 200;
 }
 
 .home-domain-card h3 {
@@ -68,7 +70,7 @@
 
 .home-domain-card p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .home-why-matters {
@@ -129,7 +131,8 @@
 .home-why-matters__right ul li span {
     color: rgba(250, 250, 250, 0.24);
     font-size: 18px;
-    margin-right: 30px;
+    width: 80px;
+    margin-right: 20px;
 }
 
 .home-why-matters__right ul li p {
@@ -205,7 +208,7 @@
 .home-card {
     display: flex;
     flex-direction: column;
-    height: 485px;
+    height: 605px;
     border-radius: 20px;
     color: #fafafa;
     padding: 30px 42px;
@@ -229,6 +232,7 @@
 .home-card span {
     font-size: 16px;
     color: rgba(250, 250, 250, 0.3);
+    margin-bottom: 20px;
 }
 
 .home-card h3 {
@@ -258,6 +262,7 @@
 .home-card__footer h3 {
     font-size: 24px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .home-card__footer span {
@@ -273,9 +278,8 @@
 
 /* ── Contacts ────────────────────────────────────────── */
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
 }
 
 .footer-main {
@@ -313,6 +317,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    list-style: none;
 }
 
 .contacts-nav li a {
@@ -409,7 +414,7 @@
 
     .home-card h3 {
         font-size: 20px;
-        margin-bottom: 14px;
+        margin-bottom: 24px;
     }
 
     .home-card__footer {
@@ -420,8 +425,7 @@
 
     /* Contacts */
     .footer {
-        flex-direction: column;
-        gap: 32px;
+        grid-template-columns: 1fr;
     }
 
     .footer-main {
@@ -475,7 +479,7 @@
   .home-why7g__icon img { height: 43px; }
 
   /* Cards */
-  .home-card { height: 679px; padding: 42px 59px; }
+  .home-card { height: 900px; padding: 42px 59px; }
   .home-card span { font-size: 22px; }
   .home-card h3 { font-size: 34px; margin-bottom: 28px; }
   .home-card p { font-size: 20px; }

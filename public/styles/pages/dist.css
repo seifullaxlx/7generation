@@ -27,6 +27,13 @@
   border-radius: 20px;
 }
 
+.dist-hero__left p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+  margin-top: 30px;
+}
+
 .dist-hero__right p {
   font-size: 16px;
   line-height: 1.7;
@@ -106,6 +113,7 @@
   font-size: 16px;
   color: rgba(2, 2, 6, 0.24);
   margin-right: 30px;
+  width: 70px;
 }
 
 .dist-layer-item__name {
@@ -156,6 +164,9 @@
 }
 
 @media (min-width: 1260px) {
+  .dist-hero__left p {
+    font-size: 24px;
+  }
   .dist-hero__right { padding: 77px 59px 67px 57px; }
   .dist-hero__right p { font-size: 22px; }
   .dist-label { font-size: 22px; margin-bottom: 22px; }
