@@ -2,12 +2,19 @@ import '../../public/styles/pages/dist.css'
 import ContactsSection from "../components/ContactsSection.jsx";
 
 export default function Dist() {
+  // const layers = [
+  //   { num: '/ 01 /', name: 'Traffic', desc: 'data flows, signalling, anomalies' },
+  //   { num: '/ 02 /', name: 'Behaviour', desc: 'usage patterns, coordination, deception' },
+  //   { num: '/ 03 /', name: 'Identity', desc: 'relationships between users, devices, and accounts' },
+  //   { num: '/ 04 /', name: 'Risk', desc: 'scoring, forecasting, scenarios' },
+  //   { num: '/ 05 /', name: 'Integrity Outcomes', desc: 'prevention, compliance, trust' },
+  // ]
   const layers = [
-    { num: '/ 01 /', name: 'Traffic', desc: 'data flows, signalling, anomalies' },
-    { num: '/ 02 /', name: 'Behaviour', desc: 'usage patterns, coordination, deception' },
-    { num: '/ 03 /', name: 'Identity', desc: 'relationships between users, devices, and accounts' },
-    { num: '/ 04 /', name: 'Risk', desc: 'scoring, forecasting, scenarios' },
-    { num: '/ 05 /', name: 'Integrity Outcomes', desc: 'prevention, compliance, trust' },
+    { icon: 'https://static.tildacdn.pro/tild3061-6632-4438-a135-633566376137/Group_33262.png', name: 'Traffic', desc: 'data flows, signalling, anomalies' },
+    { icon: 'https://static.tildacdn.pro/tild6366-3765-4534-b833-636466663331/Group_33263.png', name: 'Behaviour', desc: 'usage patterns, coordination, deception' },
+    { icon: 'https://static.tildacdn.pro/tild3635-3532-4930-b036-363665623230/Group_33264.png', name: 'Identity', desc: 'relationships between users, devices, and accounts' },
+    { icon: 'https://static.tildacdn.pro/tild3962-3430-4262-b162-326632356135/Group_33265.png', name: 'Risk', desc: 'scoring, forecasting, scenarios' },
+    { icon: 'https://static.tildacdn.pro/tild6165-6664-4636-b336-663939633463/Group_33266.png', name: 'Integrity Outcomes', desc: 'prevention, compliance, trust' },
   ]
 
   return (
@@ -38,7 +45,7 @@ export default function Dist() {
           </div>
         </div>
 
-        <img className="dist-img-round" src="/img/dist-img.png" alt=""/>
+        <img className="dist-img-round" src="/img/dist-img.png" alt="" />
       </section>
 
       {/* DI&ST Layers */}
@@ -48,9 +55,9 @@ export default function Dist() {
         <div className="dist-layers__inner">
           <div className="dist-layers__left">
             <ul className="dist-layers__list">
-              {layers.map(({ num, name, desc }) => (
-                <li key={num} className="dist-layer-item">
-                  <span className="dist-layer-item__num">{num}</span>
+              {layers.map(({ icon, name, desc, index }) => (
+                <li key={index} className="dist-layer-item">
+                  <img src={icon} className="dist-layer-item__icon" />
                   <span className="dist-layer-item__name">{name}</span>
                   <span className="dist-layer-item__desc">{desc}</span>
                 </li>

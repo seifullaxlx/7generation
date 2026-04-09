@@ -1,6 +1,7 @@
 /* Hero */
 .dist-hero {
-  min-height: 480px;
+  min-height: 870px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -10,12 +11,12 @@
 
 .dist-hero .page-grid {
   align-items: end;
-  gap: 32px;
+  gap: 24px;
 }
 
 .dist-hero__heading {
-  font-size: clamp(2rem, 5vw, 3.75rem);
-  font-weight: 200;
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 500;
   line-height: 1.05;
   color: #fff;
   margin-top: 100px;
@@ -23,7 +24,7 @@
 
 .dist-hero__right {
   border: 1px solid rgba(250, 250, 250, 0.3);
-  padding: 55px 42px 48px 41px;
+  padding: 20px 16px;
   border-radius: 20px;
 }
 
@@ -75,7 +76,11 @@
 
 .dist-img-round {
   width: 100%;
+  height: 370px;
+  border-radius: 20px;
   margin-top: 15px;
+  object-fit: cover;
+  object-position: bottom right;
 }
 
 /* DI&ST Layers */
@@ -100,6 +105,7 @@
 
 .dist-layer-item {
   display: grid;
+  align-items: center;
   grid-template-columns: 20% 40% 40%;
   background: rgba(217, 217, 217, 0.17);
   padding: 35px 34px 35px 27px;
@@ -109,11 +115,9 @@
   margin-bottom: 10px;
 }
 
-.dist-layer-item__num {
-  font-size: 16px;
-  color: rgba(2, 2, 6, 0.24);
+.dist-layer-item__icon {
   margin-right: 30px;
-  width: 70px;
+  width: 80px;
 }
 
 .dist-layer-item__name {
@@ -135,7 +139,7 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px 20px;
   min-height: 450px;
   height: 100%;
 }
@@ -156,6 +160,60 @@
   font-size: 16px;
 }
 
+@media (max-width: 767px) {
+  .dist-hero {
+    min-height: 700px;
+  }
+
+  .dist-hero__left p {
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 1.1;
+  }
+
+  .dist-hero__right p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .dist-what__heading {
+    font-size: clamp(1.95rem, 3vw, 2.25rem);
+    letter-spacing: -2px;
+  }
+
+  .dist-what__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dist-img-round {
+    height: 320px;
+    border-radius: 16px;
+  }
+
+  .dist-layer-item {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    grid-template-columns: 20% 20% 40%;
+    gap: 10%;
+    padding: 16px 10px;
+  }
+
+  .dist-layer-item__icon {
+    margin-right: 0px;
+    width: 60px;
+  }
+
+  .dist-layer-item__name {
+    font-size: 14px;
+  }
+
+  .dist-layer-item__desc {
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 768px) {
   .dist-layers__inner {
     grid-template-columns: 1fr 1fr;
@@ -164,19 +222,65 @@
 }
 
 @media (min-width: 1260px) {
+  .dist-hero {
+    padding-bottom: 80px;
+  }
+
   .dist-hero__left p {
     font-size: 24px;
   }
-  .dist-hero__right { padding: 77px 59px 67px 57px; }
-  .dist-hero__right p { font-size: 22px; }
-  .dist-label { font-size: 22px; margin-bottom: 22px; }
-  .dist-what__body { font-size: 20px; margin-bottom: 22px; }
-  .dist-layer-item { padding: 49px 48px 49px 38px; font-size: 22px; }
-  .dist-layer-item__num { font-size: 22px; margin-right: 42px; }
-  .dist-layer-item__name { font-size: 22px; }
-  .dist-layer-item__desc { font-size: 22px; }
-  .dist-verticals-card { padding: 56px; min-height: 630px; }
-  .dist-verticals-card span { font-size: 22px; margin-bottom: 42px; }
-  .dist-verticals-card h3 { font-size: 50px; }
-  .dist-verticals-card p { font-size: 22px; }
+
+  .dist-hero__right {
+    padding: 77px 59px 67px 57px;
+  }
+
+  .dist-hero__right p {
+    font-size: 22px;
+  }
+
+  .dist-label {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .dist-what__body {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .dist-layer-item {
+    padding: 49px 48px 49px 38px;
+    font-size: 22px;
+  }
+
+  .dist-layer-item__num {
+    font-size: 22px;
+    margin-right: 42px;
+  }
+
+  .dist-layer-item__name {
+    font-size: 22px;
+  }
+
+  .dist-layer-item__desc {
+    font-size: 22px;
+  }
+
+  .dist-verticals-card {
+    padding: 56px;
+    min-height: 630px;
+  }
+
+  .dist-verticals-card span {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+
+  .dist-verticals-card h3 {
+    font-size: 50px;
+  }
+
+  .dist-verticals-card p {
+    font-size: 22px;
+  }
 }

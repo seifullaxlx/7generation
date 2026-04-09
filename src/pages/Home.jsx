@@ -4,6 +4,7 @@ import DomainCard from '../components/DomainCard'
 import Why7gItem from '../components/Why7gItem'
 import IconListItem from '../components/IconListItem'
 import HomeCard from '../components/HomeCard'
+import { useLeadForm } from '../context/LeadFormContext'
 
 const why7gItems = [
   {
@@ -40,6 +41,8 @@ const whyMattersList = [
 ]
 
 export default function Home() {
+  const { openLeadForm } = useLeadForm()
+
   return (
     <>
       {/* ── 1. Hero ─────────────────────────────────── */}
@@ -50,15 +53,16 @@ export default function Home() {
               Vendor-agnostic Data Intelligence for Providers &amp; Public-Sector Institutions
             </p>
             <h1 className="block__heading">7Generation</h1>
+            <button className="cta-button" onClick={() => openLeadForm('hero-cta')}>Contact us</button>
           </div>
           <div className="block">
             <p className="block__body">
               As digital infrastructures converge, risk no longer resides within isolated systems. It emerges across networks, data flows, and transactions — often long before it becomes visible in services, reports, or compliance metrics.
-              <br/>
-              <br/>
+              <br />
+              <br />
               Many providers and public-sector institutions still operate reactively, not due to a lack of controls, but because infrastructure behaviour itself remains insufficiently observable.
-              <br/>
-              <br/>
+              <br />
+              <br />
               7Generation addresses this gap by enabling infrastructure-level data intelligence, allowing digital ecosystems to be understood, governed, and kept predictable at scale.
             </p>
           </div>
@@ -66,13 +70,13 @@ export default function Home() {
       </section>
 
       <section className="page section--light">
-        <div className="page-grid" style={{ minHeight: '500px' }}>
+        <div className="page-grid" style={{ minHeight: '500px', margin: '40px 0' }}>
           <div className="second-section-title">
             <span>/ Infrastructure /</span>
-            <h1>Infrastructure Data Intelligence at Scale</h1>
+            <h1 className="home-section-title">Infrastructure Data Intelligence at Scale</h1>
           </div>
           <div className="second-section-body" style={{ display: "flex", flexDirection: "column", margin: "auto" }}>
-            <p style={{ marginBottom: "24px"}}>7Generation works with infrastructure-level data, including:</p>
+            <p style={{ marginBottom: "24px" }}>7Generation works with infrastructure-level data, including:</p>
             <ul>
               <IconListItem icon="/img/home-icons/network.png" text="Network traffic and signalling flows" />
               <IconListItem icon="/img/home-icons/telecom.svg" text="Telecom and service metadata" />
@@ -81,7 +85,7 @@ export default function Home() {
             <p style={{ marginTop: "37px" }}>to build a ground-truth view of how digital systems actually operate, rather than how they are represented at the service or application layer.</p>
           </div>
           <div className="second-section-desc">
-            <p>Telecom operators, financial institutions, platforms, and public services
+            <p className="home-section-desc">Telecom operators, financial institutions, platforms, and public services
               increasingly rely on the same underlying infrastructure layers. Yet visibility remains fragmented across domains.
               <br />
               <br />
@@ -100,8 +104,7 @@ export default function Home() {
               <span className="home-domains__label">/ Capabilities /</span>
               <h2 className="home-domains__heading">
                 Core Domains — <br />
-                Where Risk <br />
-                Takes Shape
+                Where Risk Takes Shape
               </h2>
             </div>
             <DomainCard
@@ -234,11 +237,11 @@ export default function Home() {
           </HomeCard>
         </div>
         <div className="home-card__footer">
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <h3>Vendor-agnostic by design</h3>
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
             <span>/ 04 /</span>
+            <h3>Vendor-agnostic by design</h3>
           </div>
-          <div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             <p>7Generation solutions are built as an overlay intelligence layer<br />
               that integrates seamlessly with existing infrastructures of:
               <br /><br />

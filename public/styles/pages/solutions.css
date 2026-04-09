@@ -1,11 +1,11 @@
 /* Hero */
 .sol-hero {
-  min-height: 900px;
+  min-height: 870px;
   display: flex;
   align-items: flex-end;
   background: url("/img/solution.jpg");
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .sol-hero__heading {
@@ -84,6 +84,7 @@
 
 .sol-list-streams p {
   font-size: 16px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -114,6 +115,9 @@
 .sol-frameworks {
   background-size: cover;
   background: url("/img/sol-fw-footer.jpg");
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .sol-frameworks__grid {
@@ -170,10 +174,16 @@
   border: 1px solid rgba(250, 250, 250, 0.3);
   border-radius: 20px;
   color: #fff;
-  padding: 15px 137px;
+  padding: 15px 0;
   font-size: 14px;
   font-weight: 200;
   margin-top: auto;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.sol-fw-card button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(250, 250, 250, 0.1);
 }
 
 /* ── Mobile ──────────────────────────────────────────── */
@@ -181,7 +191,11 @@
 
   .sol-frameworks {
     background-color: #020206;
+    background-position: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
+
   .sol-hero {
     min-height: 700px;
     padding-bottom: 40px;
@@ -198,9 +212,16 @@
   }
 
   .sol-row-card {
-    height: auto;
-    min-height: 280px;
+    min-height: 320px;
     padding: 24px;
+  }
+
+  .sol-row-card span {
+    margin-bottom: 16px;
+  }
+
+  .sol-row-card p {
+    font-size: 14px;
   }
 
   .sol-row-card h3 {
@@ -210,6 +231,11 @@
   .sol-list-streams,
   .sol-list-outcomes {
     padding: 24px;
+  }
+
+  .sol-list-streams li,
+  .sol-list-outcomes li {
+    font-size: 14px;
   }
 
   /* Frameworks */
@@ -229,26 +255,77 @@
 }
 
 @media (min-width: 1260px) {
+  .sol-frameworks {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   /* Row cards */
-  .sol-row-card { padding: 49px 64px; height: 630px; }
-  .sol-row-card span { font-size: 22px; margin-bottom: 42px; }
-  .sol-row-card h3 { font-size: 50px; }
-  .sol-row-card p { font-size: 22px; }
+  .sol-row-card {
+    padding: 49px 64px;
+    height: 630px;
+  }
+
+  .sol-row-card span {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+
+  .sol-row-card h3 {
+    font-size: 50px;
+  }
+
+  .sol-row-card p {
+    font-size: 22px;
+  }
 
   /* Lists */
   .sol-list-streams,
-  .sol-list-outcomes { padding: 56px; }
+  .sol-list-outcomes {
+    padding: 56px;
+  }
+
   .sol-list-streams p,
-  .sol-list-outcomes p { font-size: 22px; margin-bottom: 28px; }
+  .sol-list-outcomes p {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
   .sol-list-streams li,
-  .sol-list-outcomes li { font-size: 22px; }
+  .sol-list-outcomes li {
+    font-size: 22px;
+  }
 
   /* Frameworks */
-  .sol-fw span { font-size: 22px; margin-bottom: 42px; }
-  .sol-fw h3 { font-size: 45px; }
-  .sol-fw p { font-size: 22px; }
-  .sol-fw-card { height: 536px; padding: 71px 31px 31px; }
-  .sol-fw-card h3 { font-size: 45px; margin-bottom: 28px; }
-  .sol-fw-card p { font-size: 22px; }
-  .sol-fw-card button { font-size: 20px; padding: 21px 192px; }
+  .sol-fw span {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+
+  .sol-fw h3 {
+    font-size: 45px;
+  }
+
+  .sol-fw p {
+    font-size: 22px;
+  }
+
+  .sol-fw-card {
+    height: 536px;
+    padding: 71px 31px 31px;
+  }
+
+  .sol-fw-card h3 {
+    font-size: 45px;
+    margin-bottom: 28px;
+  }
+
+  .sol-fw-card p {
+    font-size: 22px;
+  }
+
+  .sol-fw-card button {
+    font-size: 20px;
+    padding: 21px 0;
+  }
 }

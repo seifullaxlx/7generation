@@ -25,24 +25,24 @@ const problems = [
     num: '/ 01 /',
     title: 'Abnormal behaviour goes unnoticed',
     desc: 'Many suspicious scenarios in networks and data flows do not look like incidents.\n' +
-        'We identify unusual and hidden behaviour that standard monitoring and security tools miss. ',
+      'We identify unusual and hidden behaviour that standard monitoring and security tools miss. ',
   },
   {
     num: '/ 02 /',
     title: 'Fraud and abuse are detected too late',
     desc: 'Most systems react only after damage has occurred. We detect suspicious activity at the infrastructure level — before it reaches transactions or services. Malicious activity mimics normal usage\n' +
-        '\n' +
-        'Automation, bots, and coordinated actions are designed to blend into legitimate traffic.\n' +
-        'We distinguish natural behaviour from artificial and coordinated patterns using behavioural\n' +
-        'signatures.',
+      '\n' +
+      'Automation, bots, and coordinated actions are designed to blend into legitimate traffic.\n' +
+      'We distinguish natural behaviour from artificial and coordinated patterns using behavioural\n' +
+      'signatures.',
   },
   {
     num: '/ 03 /',
     title: 'There is no unified view of what is happening in the network',
     desc: 'Data is scattered across network layers, platforms, and systems.\n' +
-        '\n' +
-        'We connect these signals into a coherent picture of how the infrastructure actually operates.\n' +
-        '+ управление трафиком и CVM для нужд мобильных операторов',
+      '\n' +
+      'We connect these signals into a coherent picture of how the infrastructure actually operates.\n' +
+      '+ управление трафиком и CVM для нужд мобильных операторов',
   },
   {
     num: '/ 04 /',
@@ -59,19 +59,13 @@ export default function Company() {
         <div className="page-grid">
           <div className="company-hero__left">
             <h1 className="company-hero__heading">ABOUT COMPANY</h1>
-            <p className="company-hero__label">7Generation is a deep-tech company specializing in infrastructure-level data<br />
-              intelligence for service providers and public-sector institutions.<br />
-              It builds advanced systems for real-time data processing, analytics, and digital<br />
-              risk insight — targeting high-load telecom, security, and governance use cases.
+            <p className="company-hero__label">7Generation is a deep-tech company specializing in infrastructure-level data intelligence for service providers and public-sector institutions. It builds advanced systems for real-time data processing, analytics, and digital risk insight — targeting high-load telecom, security, and governance use cases.
             </p>
           </div>
           <div className="company-hero__right">
             <div className="company-hero__info">
-              <p>KazDream → 7Generation <br/>
-                Kazdream is a technology holding focused on building and operating<br />
-                complex digital systems at scale. 7Generation is Kazdream’s export brand,<br />
-                created to deliver infrastructure-level data intelligence to international<br />
-                providers and public-sector institutions.
+              <p>KazDream → 7Generation <br /><br />
+                Kazdream is a technology holding focused on building and operating complex digital systems at scale. 7Generation is Kazdream’s export brand, created to deliver infrastructure-level data intelligence to international providers and public-sector institutions.
               </p>
             </div>
           </div>

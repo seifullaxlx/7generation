@@ -1,6 +1,6 @@
 /* Hero */
 .ec-hero {
-  min-height: 800px;
+  min-height: 870px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -66,7 +66,7 @@
 }
 
 .ec-rd__left img {
-  width: 31px;
+  min-width: 31px;
   height: 31px;
 }
 
@@ -95,7 +95,7 @@
   font-weight: 200;
 }
 
-.ec-rd__card span {
+.ec-rd__card ul {
   border: 1px solid rgba(250, 250, 250, 0.3);
   font-size: 14px;
   font-weight: 200;
@@ -118,6 +118,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  gap: 40px;
 }
 
 .ec-rd__heading {
@@ -154,7 +155,7 @@
   font-size: 18px;
   font-weight: 400;
   opacity: 0.85;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 32px;
 }
 
@@ -164,7 +165,7 @@
 }
 
 .ec-team-section--border {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .ec-team-section__heading {
@@ -220,12 +221,15 @@
   color: #2786EF;
   font-size: 16px;
   font-weight: 200;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
 
 .ec-rds-detail {
   background: url("/img/signature-analysis.jpg");
   background-size: cover;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .ec-rds__heading {
@@ -237,14 +241,18 @@
 .ec-rds-detail__inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  row-gap: 16px;
+  column-gap: 20px;
 }
+
+/* Mobile order: h2 → __right ("Its focus...") → __sub ("This team operates...") → grid */
+/* Desktop: explicit placement restores original two-column layout */
 
 .ec-rds-detail__name {
   font-size: 36px;
   font-weight: 400;
   color: #fafafa;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .ec-rds-detail__sub {
@@ -274,7 +282,7 @@
 }
 
 .ec-rds-detail__card span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
 }
 
@@ -295,6 +303,10 @@
   height: 28px;
 }
 
+.ec-rds-detail__card--last-text {
+  color: #020206;
+}
+
 .ec-rds-detail__right p {
   font-size: 16px;
   color: #fafafa;
@@ -306,19 +318,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .ec-capture__name {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 400;
-  margin: 12px 0 8px;
+  margin: 8px 0 20px;
 }
 
 .ec-capture__sub {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .ec-capture .ec-rds-detail__grid {
@@ -361,10 +373,10 @@
 }
 
 .ec-cap-card {
-  border: 1px solid rgba(250,250,250,0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(13px);
-  min-height: 280px;
+  min-height: 400px;
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -372,6 +384,7 @@
 
 .ec-capabilities__intro {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr;
   gap: 24px;
   margin-bottom: 32px;
@@ -385,7 +398,7 @@
 }
 
 .ec-cap-card h3 {
-  font-size: 32px;
+  font-size: 30px;
   margin-top: auto;
   font-weight: 400;
   color: #fafafa;
@@ -393,8 +406,61 @@
 }
 
 .ec-cap-card p {
-  font-size: 16px;
+  font-size: 14px;
   color: #fafafa;
+}
+
+@media (max-width: 767px) {
+  .ec-hero {
+    min-height: 700px;
+  }
+
+  .ec-rd__card {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .ec-rd__card p {
+    font-size: 14px;
+  }
+
+  .ec-rd__card ul {
+    padding: 20px;
+  }
+
+  .ec-rd__card li {
+    font-size: 12px;
+    line-height: 1.1;
+    margin-left: 12px;
+    margin-bottom: 6px;
+  }
+
+  .ec-rd__card li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .ec-rds-detail__right p {
+    margin-bottom: 20px;
+  }
+
+  .ec-capture {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .ec-capture__name {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .ec-capabilities__intro {
+    gap: 8px;
+  }
+
+  .ec-capabilities__heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -416,16 +482,36 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .ec-rds-detail__name {
+    margin-bottom: 10px;
+  }
+
+  .ec-rds-detail__right {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .ec-rds-detail__sub {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .ec-rds-detail__card span {
+    font-size: 18px;
+  }
+
   .ec-rds-detail__grid {
     grid-column: 1 / -1;
+    grid-row: 3;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .ec-rds__heading br {
     display: inline;
   }
+
   .ec-rd__left img {
-    width: 31px !important;
+    min-width: 31px !important;
     height: 31px;
   }
 
@@ -435,41 +521,164 @@
   }
 
   .ec-cap-card {
-    min-height: 383px;
+    min-height: 450px;
   }
 }
 
 @media (min-width: 1260px) {
-  .ec-hero__right p { font-size: 20px; }
-  .ec-rd__left li p { font-size: 22px; }
-  .li-icon { padding: 28px; margin-right: 35px; }
-  .ec-rd__p { font-size: 22px; }
-  .ec-rd__card { padding: 77px 50px; }
-  .ec-rd__card p { font-size: 22px; }
-  .ec-rd__card span { font-size: 20px; padding: 46px; }
-  .ec-label { font-size: 17px; margin-bottom: 17px; }
-  .ec-rd__inner { margin-bottom: 56px; }
-  .ec-rd__list li { font-size: 20px; }
-  .ec-rd__tagline { font-size: 25px; padding-top: 45px; }
-  .ec-team-section__sub { font-size: 20px; margin-bottom: 34px; }
-  .ec-team-section__list li { font-size: 20px; }
-  .ec-team-section__cols { gap: 34px; }
-  .ec-rds__label { font-size: 22px; margin-bottom: 56px; }
-  .ec-rds-detail__name { font-size: 50px; margin-bottom: 28px; }
-  .ec-rds-detail__sub { font-size: 22px; }
-  .ec-rds-detail__grid { gap: 17px; }
-  .ec-rds-detail__card { padding: 22px; gap: 17px; }
-  .ec-rds-detail__card span { font-size: 22px; }
-  .ec-rds-detail__card img { width: 77px; height: 77px; }
-  .ec-rds-detail__card--outcome { padding-left: 42px; }
-  .ec-rds-detail__card--outcome img { width: 39px; height: 39px; }
-  .ec-rds-detail__right p { font-size: 22px; }
-  .ec-capture__sub { font-size: 22px; margin-bottom: 56px; }
-  .ec-capabilities span { font-size: 22px; }
-  .ec-capabilities__heading { margin-top: 42px; margin-bottom: 45px; }
-  .ec-capabilities__grid { gap: 17px; }
-  .ec-cap-card { padding: 39px; min-height: 536px; }
-  .ec-cap-card span { font-size: 22px; }
-  .ec-cap-card h3 { font-size: 45px; margin-bottom: 28px; }
-  .ec-cap-card p { font-size: 22px; }
+  .ec-hero__right p {
+    font-size: 20px;
+  }
+
+  .ec-rd__left li p {
+    font-size: 22px;
+  }
+
+  .li-icon {
+    padding: 28px;
+    margin-right: 35px;
+  }
+
+  .ec-rd__p {
+    font-size: 22px;
+  }
+
+  .ec-rd__card {
+    padding: 77px 50px;
+  }
+
+  .ec-rd__card p {
+    font-size: 22px;
+  }
+
+  .ec-rd__card ul {
+    padding: 46px;
+  }
+
+  .ec-rd__card li {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .ec-rd__card li:last-child {
+    margin-bottom: 0;
+  }
+
+  .ec-label {
+    font-size: 17px;
+    margin-bottom: 17px;
+  }
+
+  .ec-rd__inner {
+    margin-bottom: 56px;
+  }
+
+  .ec-rd__list li {
+    font-size: 20px;
+  }
+
+  .ec-rd__tagline {
+    font-size: 25px;
+    padding-top: 45px;
+  }
+
+  .ec-team-section__sub {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+
+  .ec-team-section__list li {
+    font-size: 20px;
+  }
+
+  .ec-team-section__cols {
+    gap: 34px;
+  }
+
+  .ec-rds__label {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .ec-rds-detail {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .ec-rds-detail__name {
+    font-size: 50px;
+    margin-bottom: 28px;
+  }
+
+  .ec-rds-detail__sub {
+    font-size: 22px;
+  }
+
+  .ec-rds-detail__grid {
+    gap: 17px;
+  }
+
+  .ec-rds-detail__card {
+    padding: 22px;
+    gap: 17px;
+  }
+
+  .ec-rds-detail__card span {
+    font-size: 22px;
+  }
+
+  .ec-rds-detail__card img {
+    width: 77px;
+    height: 77px;
+  }
+
+  .ec-rds-detail__card--outcome {
+    padding-left: 42px;
+  }
+
+  .ec-rds-detail__card--outcome img {
+    width: 39px;
+    height: 39px;
+  }
+
+  .ec-rds-detail__right p {
+    font-size: 22px;
+  }
+
+  .ec-capture__sub {
+    font-size: 22px;
+    margin-bottom: 56px;
+  }
+
+  .ec-capabilities span {
+    font-size: 22px;
+  }
+
+  .ec-capabilities__heading {
+    margin-top: 42px;
+    margin-bottom: 45px;
+  }
+
+  .ec-capabilities__grid {
+    gap: 17px;
+  }
+
+  .ec-cap-card {
+    padding: 39px;
+    min-height: 630px;
+  }
+
+  .ec-cap-card span {
+    font-size: 22px;
+  }
+
+  .ec-cap-card h3 {
+    font-size: 45px;
+    margin-bottom: 28px;
+  }
+
+  .ec-cap-card p {
+    font-size: 22px;
+  }
 }

@@ -43,9 +43,7 @@ export default function Careers() {
           <div className="car-why__left">
             <span>/ Why /</span>
             <h2 className="car-why__heading">Why 7Generation</h2>
-            <p>Working at 7Generation means building systems that operate below<br />
-              the application layer — where correctness, stability, and integrity<br />
-              matter most. You will work on:
+            <p>Working at 7Generation means building systems that operate below the application layer — where correctness, stability, and integrity matter most. You will work on:
             </p>
             <ul className="car-why__list">
               {whyItems.map(({ icon, text }) => (
@@ -88,13 +86,13 @@ export default function Careers() {
         <div className="car-inside__heading">
           <span>/ Benefits /</span>
           <h2>Inside 7Generation</h2>
-          <p>We create conditions that allow engineers and<br /> researchers to focus on quality and growth.</p>
+          <p>We create conditions that allow engineers and researchers to focus on quality and growth.</p>
         </div>
         <div className="car-inside__grid">
           {insideItems.map(({ icon, text }, index) => (
             <div className="car-inside-card" key={index}>
               <div className="car-inside-card-icon">
-                <img src={icon} alt="#"/>
+                <img src={icon} alt="#" />
               </div>
               <p>{text}</p>
             </div>

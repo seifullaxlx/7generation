@@ -37,8 +37,8 @@ export default function Analytics() {
             </div>
             <div className="cap-hero__tag-grid">
               <span className="cap-tag">Infrastructure fraud analytics</span>
-              <span className="cap-tag">Telco–bank data correlation</span>
               <span className="cap-tag">Platform abuse detection</span>
+              <span className="cap-tag">Telco–bank data correlation</span>
               <span className="cap-tag">Crime signal modelling</span>
             </div>
           </div>
@@ -60,15 +60,15 @@ export default function Analytics() {
             <p className="cap-section__right-label">Combined with:</p>
             <ul className="cap-check-list">
               <li>
-                <span>/ 01 /</span>
+                <img src='https://static.tildacdn.pro/tild3734-6535-4161-a230-653966623964/Group_33267.png' className='cap-section__right-icon' />
                 <p>Telecom metadata</p>
               </li>
               <li>
-                <span>/ 02 /</span>
+                <img src='https://static.tildacdn.pro/tild3466-3863-4539-b938-653232653036/Group_33268.png' className='cap-section__right-icon' />
                 <p>Behavioural analytics</p>
               </li>
               <li>
-                <span>/ 03 /</span>
+                <img src='https://static.tildacdn.pro/tild6666-3936-4664-b832-323639313730/Group_33269.png' className='cap-section__right-icon' />
                 <p>AI-based anomaly detection</p>
               </li>
             </ul>
@@ -83,16 +83,15 @@ export default function Analytics() {
           <div className="net-vision__left">
             <span>/ Predictive Analytics /</span>
             <h2 className="net-vision__heading">NetVision —<br />Data &amp; Predictive Analytics</h2>
-            <p>Netalytix is designed to process large-scale telecom data.<br />
-              The platform combines network analytics, data correlation,<br />
-              and predictive models to:<br />
-              <br />
-              • analyse subscriber behaviour<br />
-              • support personalised offers, including advertising audiences<br />
-              • forecast risk through scoring models<br />
-              • assess service quality across operator networks<br />
+            <p>Netalytix is designed to process large-scale telecom data. The platform combines network analytics, data correlation, and predictive models to:<br />
+              <ul className="net-vision__left-list">
+                <li>analyse subscriber behaviour</li>
+                <li>support personalised offers, including advertising audiences</li>
+                <li>forecast risk through scoring models</li>
+                <li>assess service quality across operator networks</li>
+              </ul>
             </p>
-            <p>NetVision can operate as a standalone analytics layer or as part of a broader DI&amp;ST and DI&amp;ST stack.</p>
+            <p>Netalytix can operate as a standalone analytics layer or as part of a broader DI&amp;ST and DI&amp;ST stack.</p>
           </div>
           <div className="net-vision__right">
             <h3>Key NetVision Capabilities</h3>
@@ -108,15 +107,13 @@ export default function Analytics() {
         </div>
       </section>
 
-      <section className="section--light pred-analytics">
+      <section className="page section--light pred-analytics">
         <div className="pred-analytics-inner">
           <div className="pred-analytics-title">
             <span>/ Predictive Analytics /</span>
             <div>
-              <h2>Data & Predictive Analytics<br/> for Audience Monetisation</h2>
-              <p>Beyond risk and resilience use cases, Netalytix enables telecom<br />
-                operators to build privacy-safe audience segments at the<br />
-                infrastructure level.<br />
+              <h2>Data & Predictive Analytics for Audience Monetisation</h2>
+              <p>Beyond risk and resilience use cases, Netalytix enables telecom operators to build privacy-safe audience segments at the infrastructure level.<br />
                 <br />
                 Based on network and behavioural patterns, the platform allows operators to:</p>
             </div>
@@ -124,57 +121,57 @@ export default function Analytics() {
           <div className="pred-analytics-content">
             <ul>
               {audienceItems.map(({ num, text, index }) => (
-                  <li key={index}>
-                    <span>{num}</span>
-                    <p>{text}</p>
-                  </li>
+                <li key={index}>
+                  <span>{num}</span>
+                  <p>{text}</p>
+                </li>
               ))}
             </ul>
           </div>
         </div>
       </section>
 
-        <section className="page regulatory" >
-          <div className="regulatory__inner">
-            <div className="regulatory__left">
-              <span>/ Regulatory /</span>
-              <h2>Regulatory & <br />Operational Compatibility</h2>
-              <p>Sensitive and regulated capabilities are delivered <br />
-                through a controlled, closed-access environment.
-              </p>
+      <section className="page regulatory" >
+        <div className="regulatory__inner">
+          <div className="regulatory__left">
+            <span>/ Regulatory /</span>
+            <h2>Regulatory & <br />Operational Compatibility</h2>
+            <p>Sensitive and regulated capabilities are delivered <br />
+              through a controlled, closed-access environment.
+            </p>
+          </div>
+          <div className="regulatory__right">
+            <p>7Generation architectures are designed with consideration for:</p>
+            <div className="regulatory-item">
+              <span>/ 01 /</span>
+              <p>Regulated industries</p>
             </div>
-            <div className="regulatory__right">
-              <p>7Generation architectures are designed with consideration for:</p>
-              <div className="regulatory-item">
-                <span>/ 01 /</span>
-                <p>Regulated industries</p>
-              </div>
-              <div className="regulatory-item">
-                <span>/ 02 /</span>
-                <p>National digital infrastructures</p>
-              </div>
-              <div className="regulatory-item">
-                <span>/ 03 /</span>
-                <p>Cross-jurisdictional deployment scenarios</p>
-              </div>
+            <div className="regulatory-item">
+              <span>/ 02 /</span>
+              <p>National digital infrastructures</p>
+            </div>
+            <div className="regulatory-item">
+              <span>/ 03 /</span>
+              <p>Cross-jurisdictional deployment scenarios</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section--light streams">
-          <div className="streams-inner">
-            <span>/ Streams /</span>
-            <h3>Restricted Streams</h3>
-            <div className="streams-cards">
-              {streamCards.map(({ title, desc }) => (
-                  <div className="streams-card" key={title}>
-                    <h4>{title}</h4>
-                    <p>{desc}</p>
-                  </div>
-              ))}
-            </div>
+      <section className="section--light streams">
+        <div className="streams-inner">
+          <span>/ Streams /</span>
+          <h3>Restricted Streams</h3>
+          <div className="streams-cards">
+            {streamCards.map(({ title, desc }) => (
+              <div className="streams-card" key={title}>
+                <h4>{title}</h4>
+                <p>{desc}</p>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
       <ContactsSection />
     </>

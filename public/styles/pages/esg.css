@@ -16,30 +16,36 @@
 
 .block__body {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 20px;
-  padding: 37px 35px 38px;
+  padding: 24px;
   isolation: isolate;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow:
-          0 8px 48px rgba(0, 0, 0, 0.45),
-          0 2px 12px rgba(0, 0, 0, 0.3),
-          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    0 8px 48px rgba(0, 0, 0, 0.45),
+    0 2px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   color: #fff;
   transition:
-          color 0.4s ease,
-          border-color 0.4s ease,
-          box-shadow 0.4s ease;
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+
+  line-height: 1.1;
 }
 
 .block__list {
-  margin-left: 18px;
+  margin-top: 4px;
+  margin-left: 24px;
   gap: 2px;
   list-style: initial;
 }
 
 .block__list li {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 4px;
+  font-weight: 200;
 }
 
 .second-section-title {
@@ -47,7 +53,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 8px;
+  gap: 24px;
 }
 
 .second-section-desc p {
@@ -61,7 +67,7 @@
 }
 
 .second-section-title h1 {
-  font-size: 36px;
+  font-size: 24px;
   color: #020206;
   font-weight: 400;
 }
@@ -98,7 +104,7 @@
   padding: 20px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-right: 25px;
+  margin-right: 20px !important;
 }
 
 .second-section-body img {
@@ -167,6 +173,7 @@
 
 .third-section-info span {
   font-size: 16px;
+  opacity: 0.3;
 }
 
 .third-section-info h1 {
@@ -185,6 +192,14 @@
   color: #fff;
   margin-top: 37px;
   font-family: 'PP Neue Machina', sans-serif;
+
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.third-section-info button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .livesignal-inner {
@@ -230,8 +245,8 @@
   margin-bottom: 160px;
 }
 
-.livesignal-card p:last-child {
-  margin-top: auto;
+.livesignal-card-list p {
+  margin-bottom: 0;
 }
 
 .livesignal-card button {
@@ -242,6 +257,14 @@
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.livesignal-card button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .livesignal-capabilities {
@@ -267,14 +290,6 @@
 
 .livesignal-capabilities li:last-child {
   margin-bottom: 0;
-}
-
-.li-icon {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-right: 25px;
 }
 
 .livesignal-capabilities img {
@@ -319,7 +334,7 @@
 @media (min-width: 768px) {
 
   .page--hero {
-    height: 625px;
+    padding-bottom: 80px;
   }
 
   .block__heading {
@@ -331,6 +346,7 @@
   .block__body {
     width: 100%;
     font-size: 15px;
+    padding: 37px 35px 38px;
   }
 
   .block__list {
@@ -342,12 +358,31 @@
     align-items: stretch;
   }
 
+  .second-section-title span {
+    font-size: 20px;
+  }
+
+  .second-section-title h1 {
+    font-size: 40px;
+  }
+
+  .second-section-body p {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .second-section-body li p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
   .second-section-desc {
     grid-column: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    width: 90%;
   }
 
   .third-section-info {
@@ -366,6 +401,44 @@
 }
 
 @media (max-width: 767px) {
+  .second-section-title {
+    gap: 16px;
+  }
+
+  .li-icon {
+    margin-right: 12px !important;
+  }
+
+  .second-section-title p {
+    font-size: 14px;
+  }
+
+  .second-section-body p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .second-section-body li p {
+    font-size: 14px;
+  }
+
+  .second-section-desc p {
+    font-size: 14px;
+  }
+
+  .third-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .third-section-info {
+    margin-bottom: 10px;
+  }
+
+  .third-section-info h1 {
+    font-size: 30px;
+  }
+
   .livesignal-inner {
     grid-template-columns: 1fr;
   }
@@ -374,8 +447,13 @@
     padding: 24px;
   }
 
+  .livesignal-card p {
+    font-size: 14px;
+  }
+
   .livesignal-card-list {
     margin-bottom: 40px;
+    padding: 20px;
   }
 
   .livesignal-capabilities {
@@ -383,49 +461,148 @@
   }
 
   .livesignal-nums {
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 30px;
     margin-top: 32px;
   }
 
   .livesignal-num-item h3 {
-    font-size: 36px;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .livesignal-num-item p {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1260px) {
+
   /* Hero block overrides */
-  .block__heading { font-size: 70px; }
-  .block__body { font-size: 21px; }
+  .block__heading {
+    font-size: 70px;
+  }
+
+  .block__body {
+    font-size: 21px;
+  }
+
+  .block__list li {
+    font-size: 18px;
+  }
+
+  .block__heading__p {
+    font-size: 21px;
+  }
 
   /* Second section */
-  .second-section-title span { font-size: 22px; }
-  .second-section-title h1 { font-size: 50px; }
+  .second-section-title span {
+    font-size: 22px;
+  }
+
+  .second-section-title h1 {
+    font-size: 50px;
+  }
+
   .second-section-title p,
   .second-section-desc p,
-  .second-section-body p { font-size: 22px; }
-  .second-section-body li { padding: 8px; }
-  .li-icon { padding: 28px; margin-right: 35px; }
+  .second-section-body p {
+    font-size: 22px;
+  }
+
+  .second-section-body li {
+    padding: 8px;
+  }
+
+  .li-icon {
+    padding: 28px;
+    margin-right: 35px;
+  }
 
   /* Third section */
-  .third-section-list li { padding: 42px; }
-  .third-section-list li span { font-size: 21px; }
-  .third-section-list li h3 { font-size: 67px; margin-top: 112px; }
-  .third-section-list li p { font-size: 22px; }
-  .third-section-info span { font-size: 22px; }
-  .third-section-info h1 { font-size: 50px; margin-top: 42px; }
-  .third-section-info button { font-size: 20px; padding: 28px 67px; margin-top: 52px; }
+  .third-section-list li {
+    padding: 42px;
+  }
+
+  .third-section-list li span {
+    font-size: 21px;
+  }
+
+  .third-section-list li h3 {
+    font-size: 67px;
+    margin-top: 112px;
+  }
+
+  .third-section-list li p {
+    font-size: 22px;
+  }
+
+  .third-section-info span {
+    font-size: 22px;
+  }
+
+  .third-section-info h1 {
+    font-size: 50px;
+    margin-top: 42px;
+  }
+
+  .third-section-info button {
+    font-size: 20px;
+    padding: 28px 67px;
+    margin-top: 52px;
+  }
 
   /* LiveSignal */
-  .livesignal-card { padding: 56px; }
-  .livesignal-card span { font-size: 22px; margin-bottom: 35px; }
-  .livesignal-card h2 { font-size: 50px; margin-bottom: 28px; }
-  .livesignal-card p { font-size: 22px; margin-bottom: 34px; }
-  .livesignal-card button { font-size: 20px; padding: 28px 67px; }
-  .livesignal-card-list { padding: 42px; }
-  .livesignal-capabilities p { font-size: 22px; }
-  .livesignal-nums { margin-top: 70px; gap: 84px; }
-  .livesignal-num-item h3 { font-size: 67px; margin-bottom: 28px; }
-  .livesignal-num-item p { font-size: 22px; }
-}
+  .livesignal-card {
+    padding: 56px;
+  }
 
+  .livesignal-card span {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .livesignal-card h2 {
+    font-size: 50px;
+    margin-bottom: 28px;
+  }
+
+  .livesignal-card p {
+    font-size: 22px;
+    margin-bottom: 34px;
+  }
+
+  .livesignal-card-list p {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .livesignal-card button {
+    font-size: 20px;
+    padding: 28px 67px;
+  }
+
+  .livesignal-card-list {
+    padding: 42px;
+  }
+
+  .livesignal-capabilities p {
+    font-size: 22px;
+  }
+
+  .livesignal-nums {
+    margin-top: 70px;
+    gap: 84px;
+  }
+
+  .livesignal-num-item h3 {
+    font-size: 67px;
+    margin-bottom: 28px;
+  }
+
+  .livesignal-num-item p {
+    font-size: 22px;
+  }
+}

@@ -1,6 +1,6 @@
 /* ── Hero ─────────────────────────────────────── */
 .car-hero {
-  min-height: 480px;
+  min-height: 870px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -98,6 +98,10 @@
   padding: 20px;
   border-radius: 20px;
   flex-shrink: 0;
+}
+
+.li-icon {
+  margin-right: 0px;
 }
 
 .car-why__list li p {
@@ -200,6 +204,8 @@
 /* ── Inside 7Generation ───────────────────────── */
 .car-inside {
   background: url("/img/career-footer.jpg") center / cover no-repeat;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .car-inside__heading {
@@ -226,8 +232,7 @@
   font-size: 14px;
   font-weight: 200;
   color: #fff;
-  opacity: 0.6;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .car-inside__grid {
@@ -237,28 +242,32 @@
 }
 
 .car-inside-card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  min-height: 140px;
+  min-height: 280px;
 }
 
 .car-inside-card p {
-  font-size: 15px;
+  font-size: 22px;
   color: #fafafa;
   margin-top: auto;
-  line-height: 1.4;
+  line-height: 1.1;
+  width: 80%;
 }
 
 .car-inside-card-icon {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px;
   border-radius: 16px;
-  width: 52px;
-  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.car-inside-card-icon img {
+  width: 60px;
 }
 
 /* ── Breakpoints ──────────────────────────────── */
@@ -268,7 +277,41 @@
   }
 }
 
+@media (max-width: 767px) {
+  .car-hero {
+    min-height: 700px;
+  }
+
+  .car-why__left p {
+    line-height: 1.1;
+    font-size: 14px;
+  }
+
+  .car-dna-card {
+    min-height: 420px;
+    padding: 30px 20px;
+  }
+
+  .car-dna-card h4 {
+    margin-top: 12px;
+  }
+
+  .car-dna-card p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .car-values {
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+  .car-inside {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .car-why__inner {
     grid-template-columns: 1fr 1fr;
   }
@@ -293,11 +336,13 @@
 
   .car-inside__heading span {
     font-size: 16px;
-    opacity: 1;
+    opacity: 0.5;
     margin-right: 20%;
+    min-width: 87px;
   }
 
   .car-inside__heading h2 {
+    font-size: 42px;
     margin-right: 70px;
   }
 
@@ -337,25 +382,99 @@
 }
 
 @media (min-width: 1260px) {
-  .car-hero__sub { font-size: 20px; }
-  .car-hero__right p { font-size: 20px; }
-  .car-label { font-size: 17px; margin-bottom: 17px; }
-  .car-why__left span { font-size: 22px; margin-bottom: 39px; }
-  .car-why__left p { font-size: 22px; margin-bottom: 48px; }
-  .car-why__list li { padding: 8px; }
+  .car-hero {
+    padding-bottom: 80px;
+  }
+
+  .car-hero__sub {
+    font-size: 20px;
+  }
+
+  .car-hero__right p {
+    font-size: 20px;
+  }
+
+  .car-label {
+    font-size: 17px;
+    margin-bottom: 17px;
+  }
+
+  .car-why__left span {
+    font-size: 22px;
+    margin-bottom: 39px;
+  }
+
+  .car-why__left p {
+    font-size: 22px;
+    margin-bottom: 48px;
+  }
+
+  .car-why__list li {
+    padding: 8px;
+  }
+
   .car-why__list .li-icon,
-  .car-why__icon { padding: 28px; }
-  .car-why__list li p { margin-left: 28px; }
-  .car-dna-card { padding: 28px; min-height: 392px; }
-  .car-dna-card span { font-size: 22px; }
-  .car-dna-card p { font-size: 22px; }
-  .car-dna-card button { font-size: 20px; padding: 29px; }
-  .car-values span { font-size: 22px; margin-bottom: 39px; }
-  .car-values__item { padding: 8px; }
-  .car-values-icon { padding: 28px; margin-right: 21px; }
-  .car-values__item p { font-size: 22px; }
-  .car-inside__grid { gap: 17px; }
-  .car-inside-card { padding: 28px; min-height: 280px; }
-  .car-inside-card p { font-size: 28px; }
-  .car-inside-card-icon { padding: 25px; width: 98px; margin-bottom: 126px; }
+  .car-why__icon {
+    padding: 28px;
+  }
+
+  .car-why__list li p {
+    margin-left: 28px;
+  }
+
+  .car-dna-card {
+    padding: 28px;
+    min-height: 392px;
+  }
+
+  .car-dna-card span {
+    font-size: 22px;
+  }
+
+  .car-dna-card p {
+    font-size: 22px;
+  }
+
+  .car-dna-card button {
+    font-size: 20px;
+    padding: 29px;
+  }
+
+  .car-values span {
+    font-size: 22px;
+    margin-bottom: 39px;
+  }
+
+  .car-values__item {
+    padding: 8px;
+  }
+
+  .car-values-icon {
+    padding: 28px;
+    margin-right: 21px;
+  }
+
+  .car-values__item p {
+    font-size: 22px;
+  }
+
+  .car-inside__grid {
+    gap: 17px;
+  }
+
+  .car-inside-card {
+    padding: 28px;
+    min-height: 280px;
+  }
+
+  .car-inside-card p {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .car-inside-card-icon {
+    padding: 25px;
+    width: 98px;
+    margin-bottom: 126px;
+  }
 }

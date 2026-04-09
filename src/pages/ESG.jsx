@@ -1,6 +1,8 @@
 import '../../public/styles/pages/esg.css'
 import IconListItem from '../components/IconListItem'
 import ContactsSection from "../components/ContactsSection.jsx";
+import { useLeadForm } from '../context/LeadFormContext'
+
 
 const foundationSteps = [
   { icon: '/img/home-icons/global-network 1.svg', text: 'Receiving devices from donors and partners' },
@@ -25,9 +27,11 @@ const livesignalStats = [
 ]
 
 export default function ESG() {
+  const { openLeadForm } = useLeadForm()
+
   return (
     <>
-      <section className="page section--hero page--hero" data-nav-theme="dark">
+      <section className="page section--hero page--hero esg-hero" data-nav-theme="dark">
         <div className="page-grid">
           <div className="block">
             <h1 className="block__heading">ESG &amp; PUBLIC <br />SAFETY PROJECTS</h1>
@@ -40,7 +44,7 @@ export default function ESG() {
               educational and public infrastructure.
               For us, ESG is not a separate initiative. It
               is a continuation of engineering responsibility - using technology,
-              data and processes where they create real impact. <br />
+              data and processes where they create real impact. <br /><br />
               We develop projects that:
               <ul className="block__list">
                 <li>expand access to education and technology</li>
@@ -51,7 +55,7 @@ export default function ESG() {
             </p>
           </div>
         </div>
-      </section>
+      </section >
 
       <section className="page section--light">
         <div className="page-grid">
@@ -92,7 +96,7 @@ export default function ESG() {
           <div className="third-section-info">
             <span>/ Philosophy /</span>
             <h1>By giving a laptop, we provide a tool that can change a child's educational and life trajectory.</h1>
-            <button>Support the project</button>
+            <button onClick={() => openLeadForm('esg-philosophy')}>Support the project</button>
           </div>
         </div>
       </section>
@@ -116,10 +120,10 @@ export default function ESG() {
               </p>
             </div>
             <p>The project directly improves public safety and emergency response efficiency.</p>
-            <button>Learn more about the technology</button>
+            <button onClick={() => openLeadForm('life-signal')}>Learn more about the technology</button>
           </div>
           <div className="livesignal-capabilities">
-            <p style={{ marginBottom: '20px'}}>Key capabilities</p>
+            <p style={{ marginBottom: '20px' }}>Key capabilities</p>
             <IconListItem icon="/img/location.svg" text="automatic location detection during emergency calls" />
             <IconListItem icon="/img/emergency.svg" text="faster emergency response" />
             <IconListItem icon="/img/critical-error.svg" text="reduced risk of critical errors" />

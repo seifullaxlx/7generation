@@ -8,11 +8,11 @@ export default function ContactsSection() {
           <div className="footer-main">
             <div>
               <p className="contacts-label">/ Number /</p>
-              <p className="contacts-value">+7 (777) 777-77-77</p>
+              <p className="contacts-value">+7 (708) 144 74 21</p>
             </div>
             <div>
               <p className="contacts-label">E-mail /</p>
-              <a href="mailto:7gen@gmail.com" className="contacts-value">7gen@gmail.com</a>
+              <a href="mailto:7gen@gmail.com" className="contacts-value">sales@7g.team</a>
             </div>
             <div className="contacts-nav">
               <p className="contacts-label">/ Navigation /</p>
@@ -23,12 +23,15 @@ export default function ContactsSection() {
                 <li><a href="/solutions">Solutions</a></li>
                 <li><a href="/company">Company</a></li>
                 <li><a href="/esg">ESG</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/careers">Why7G</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="/video-intelligence">Video Intelligence</a></li>
               </ul>
             </div>
             <div>
               <p className="contacts-label">/ Address /</p>
-              <p className="contacts-value">г. Астана, проспект <br /> Бауыржан Момышулы 2/1</p>
+              <p className="contacts-value">Astana, Bauyrzhan Momyshuly Avenue 2/1</p>
             </div>
           </div>
         </div>
