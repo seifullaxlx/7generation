@@ -3,40 +3,23 @@ import { useLeadForm } from '../context/LeadFormContext'
 import '../../public/styles/components/lead-form-modal.css'
 
 const EMPTY_FORM = {
-  name: '',
-  company: '',
+  firstName: '',
+  lastName: '',
   email: '',
   phone: '',
-  interest: '',
-  message: '',
+  country: '',
+  companyName: '',
+  request: '',
 }
 
-// ─── CRM Integration ──────────────────────────────────────────────────────────
-// Replace this function body with your actual CRM API call.
-//
-// HubSpot example:
-//   POST https://api.hsforms.com/submissions/v3/integration/submit/{portalId}/{formId}
-//
-// Pipedrive example:
-//   POST https://api.pipedrive.com/v1/persons?api_token=YOUR_TOKEN
-//
-// Generic backend:
-//   POST /api/leads
-// ─────────────────────────────────────────────────────────────────────────────
 async function submitLead(data) {
-  // TODO: replace with real CRM endpoint
-  console.log('[LeadForm] Submitting lead:', data)
-
-  // Simulated network delay — remove when wiring up real API
-  await new Promise(resolve => setTimeout(resolve, 1000))
-
-  // Uncomment and adapt for your CRM:
-  // const res = await fetch('/api/leads', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify(data),
-  // })
-  // if (!res.ok) throw new Error('CRM submit failed')
+  const res = await fetch('/api/leads.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  })
+  const json = await res.json()
+  if (!res.ok) throw new Error(json.error || 'Submit failed')
 }
 
 export default function LeadFormModal() {
@@ -46,17 +29,14 @@ export default function LeadFormModal() {
   const [form, setForm] = useState(EMPTY_FORM)
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
 
-  // Open / close the native dialog
   useEffect(() => {
     const dialog = dialogRef.current
     if (!dialog) return
     if (isOpen) {
       dialog.showModal()
-      // Delay focus so CSS animation doesn't jank
       requestAnimationFrame(() => firstInputRef.current?.focus())
     } else {
       dialog.close()
-      // Reset form after closing animation finishes
       setTimeout(() => {
         setForm(EMPTY_FORM)
         setStatus('idle')
@@ -64,12 +44,10 @@ export default function LeadFormModal() {
     }
   }, [isOpen])
 
-  // Close on backdrop click (click lands on <dialog> itself, not its children)
   function handleDialogClick(e) {
     if (e.target === dialogRef.current) closeLeadForm()
   }
 
-  // Allow native ESC key but go through our state
   function handleCancel(e) {
     e.preventDefault()
     closeLeadForm()
@@ -135,28 +113,28 @@ export default function LeadFormModal() {
 
             <div className="lead-modal__row">
               <label className="lead-modal__field">
-                <span>Full name <span aria-hidden="true">*</span></span>
+                <span>First name <span aria-hidden="true">*</span></span>
                 <input
                   ref={firstInputRef}
                   type="text"
-                  name="name"
-                  value={form.name}
+                  name="firstName"
+                  value={form.firstName}
                   onChange={handleChange}
                   required
-                  autoComplete="name"
-                  placeholder="John Smith"
+                  autoComplete="given-name"
+                  placeholder="John"
                 />
               </label>
               <label className="lead-modal__field">
-                <span>Company <span aria-hidden="true">*</span></span>
+                <span>Last name <span aria-hidden="true">*</span></span>
                 <input
                   type="text"
-                  name="company"
-                  value={form.company}
+                  name="lastName"
+                  value={form.lastName}
                   onChange={handleChange}
                   required
-                  autoComplete="organization"
-                  placeholder="Acme Corp"
+                  autoComplete="family-name"
+                  placeholder="Smith"
                 />
               </label>
             </div>
@@ -187,29 +165,44 @@ export default function LeadFormModal() {
               </label>
             </div>
 
+            <div className="lead-modal__row">
+              <label className="lead-modal__field">
+                <span>Country</span>
+                <input
+                  type="text"
+                  name="country"
+                  value={form.country}
+                  onChange={handleChange}
+                  autoComplete="country-name"
+                  placeholder="Kazakhstan"
+                />
+              </label>
+              <label className="lead-modal__field">
+                <span>Company <span aria-hidden="true">*</span></span>
+                <input
+                  type="text"
+                  name="companyName"
+                  value={form.companyName}
+                  onChange={handleChange}
+                  required
+                  autoComplete="organization"
+                  placeholder="Acme Corp"
+                />
+              </label>
+            </div>
+
             <label className="lead-modal__field">
               <span>I'm interested in</span>
               <div className="lead-modal__select-wrap">
-                <select name="interest" value={form.interest} onChange={handleChange}>
+                <select name="request" value={form.request} onChange={handleChange}>
                   <option value="">Select a product</option>
-                  <option value="dist">DIST</option>
-                  <option value="analytics">Analytics</option>
-                  <option value="video-intelligence">Video Intelligence</option>
-                  <option value="full-platform">Full Platform</option>
-                  <option value="other">Other</option>
+                  <option value="DIST">DIST</option>
+                  <option value="Analytics">Analytics</option>
+                  <option value="Video Intelligence">Video Intelligence</option>
+                  <option value="Full Platform">Full Platform</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
-            </label>
-
-            <label className="lead-modal__field">
-              <span>Message</span>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                rows={4}
-                placeholder="Tell us about your use case or any questions you have…"
-              />
             </label>
 
             {status === 'error' && (
