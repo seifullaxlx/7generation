@@ -279,7 +279,7 @@
 
 @media (max-width: 767px) {
   .car-hero {
-    min-height: 700px;
+    min-height: 550px;
   }
 
   .car-why__left p {

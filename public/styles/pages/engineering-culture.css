@@ -412,7 +412,7 @@
 
 @media (max-width: 767px) {
   .ec-hero {
-    min-height: 700px;
+    min-height: 550px;
   }
 
   .ec-rd__card {
